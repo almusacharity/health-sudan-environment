@@ -1,83 +1,702 @@
-<section id="join">
-  <h2>التسجيل كعضو</h2>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
-  <p style="text-align:center; margin-bottom:20px;">
-    املأ البيانات التالية، ثم اضغط إرسال طلب التسجيل.
-  </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <form onsubmit="sendMembershipEmail(event)">
+  <title>منظمة الصحة السودانية لحماية البيئة</title>
 
-    <input
-      type="text"
-      id="full_name"
-      placeholder="الاسم الكامل"
-      required
-    >
+  <meta name="description"
+        content="منظمة الصحة السودانية لحماية البيئة - منظمة إنسانية وطوعية تهدف إلى خدمة المجتمع وحماية البيئة وتعزيز الصحة العامة.">
 
-    <input
-      type="tel"
-      id="phone"
-      placeholder="رقم الهاتف / واتساب"
-      required
-    >
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <input
-      type="email"
-      id="email"
-      placeholder="البريد الإلكتروني"
-    >
+    body {
+      font-family: Arial, Tahoma, sans-serif;
+      background: #f3f8f4;
+      color: #222;
+      line-height: 1.7;
+    }
 
-    <input
-      type="text"
-      id="city"
-      placeholder="الولاية / المدينة"
-    >
+    header {
+      background: linear-gradient(135deg, #087f3d, #0aa653);
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
 
-    <select id="membership_type" required>
-      <option value="">اختر نوع العضوية</option>
-      <option>عضو متطوع</option>
-      <option>عضو عادي</option>
-      <option>عضو داعم</option>
-    </select>
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
 
-    <textarea
-      id="notes"
-      placeholder="ملاحظات إضافية"
-    ></textarea>
+    header .english {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
 
-    <button type="submit">
-      📧 إرسال طلب التسجيل
-    </button>
+    header p {
+      font-size: 17px;
+    }
 
-  </form>
-</section>
+    nav {
+      background: #056b33;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-<script>
-function sendMembershipEmail(event) {
-  event.preventDefault();
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 9px 15px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
 
-  const name = document.getElementById("full_name").value;
-  const phone = document.getElementById("phone").value;
-  const email = document.getElementById("email").value;
-  const city = document.getElementById("city").value;
-  const membership = document.getElementById("membership_type").value;
-  const notes = document.getElementById("notes").value;
+    nav a:hover {
+      background: #075728;
+    }
 
-  const subject =
-    "طلب تسجيل عضو جديد - منظمة الصحة السودانية لحماية البيئة";
+    .hero {
+      max-width: 1200px;
+      margin: 25px auto;
+      padding: 80px 25px;
+      text-align: center;
+      background: white;
+      border-radius: 15px;
+    }
 
-  const body =
-    "طلب تسجيل عضو جديد%0A%0A" +
-    "الاسم الكامل: " + encodeURIComponent(name) + "%0A" +
-    "رقم الهاتف / واتساب: " + encodeURIComponent(phone) + "%0A" +
-    "البريد الإلكتروني: " + encodeURIComponent(email) + "%0A" +
-    "الولاية / المدينة: " + encodeURIComponent(city) + "%0A" +
-    "نوع العضوية: " + encodeURIComponent(membership) + "%0A" +
-    "الملاحظات: " + encodeURIComponent(notes);
+    .hero h2 {
+      color: #087f3d;
+      font-size: 35px;
+      margin-bottom: 18px;
+    }
 
-  window.location.href =
-    "mailto:Hima199th@gmail.com,belal62100056@gmail.com" +
-    "?subject=" + encodeURIComponent(subject) +
-    "&body=" + body;
-}
-</script>
+    .hero p {
+      font-size: 19px;
+      max-width: 800px;
+      margin: auto auto 25px;
+    }
+
+    .main-button {
+      display: inline-block;
+      background: #087f3d;
+      color: white;
+      text-decoration: none;
+      padding: 13px 28px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .main-button:hover {
+      background: #056b33;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 25px auto;
+      padding: 40px 25px;
+      background: white;
+      border-radius: 15px;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #087f3d;
+      font-size: 29px;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f2f8f4;
+      border: 1px solid #d6eadc;
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: #087f3d;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      text-align: center;
+      font-size: 18px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .join-text {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 17px;
+    }
+
+    form {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: inherit;
+      background: white;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #087f3d;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #056b33;
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .contact p {
+      margin: 12px 0;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      margin: 5px;
+      font-weight: bold;
+    }
+
+    .email {
+      color: #087f3d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #056b33;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+
+      header h1 {
+        font-size: 25px;
+      }
+
+      header .english {
+        font-size: 15px;
+      }
+
+      .hero {
+        padding: 55px 18px;
+        margin: 15px 10px;
+      }
+
+      .hero h2 {
+        font-size: 27px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      section {
+        margin: 15px 10px;
+        padding: 30px 15px;
+      }
+
+      section h2 {
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- رأس الموقع -->
+
+  <header>
+
+    <h1>
+      منظمة الصحة السودانية لحماية البيئة
+    </h1>
+
+    <div class="english">
+      Sudanese Health Organization for Environmental Protection
+    </div>
+
+    <p>
+      منظمة إنسانية وطوعية لخدمة المجتمع
+    </p>
+
+  </header>
+
+
+  <!-- القائمة -->
+
+  <nav>
+
+    <a href="#home">الرئيسية</a>
+
+    <a href="#services">خدماتنا</a>
+
+    <a href="#about">من نحن</a>
+
+    <a href="#join">التسجيل</a>
+
+    <a href="#contact">اتصل بنا</a>
+
+  </nav>
+
+
+  <!-- الصفحة الرئيسية -->
+
+  <section class="hero" id="home">
+
+    <h2>
+      معًا من أجل صحة أفضل وبيئة أفضل
+    </h2>
+
+    <p>
+      نعمل من أجل تعزيز الصحة العامة وإصحاح البيئة
+      ونشر الوعي الصحي والبيئي وخدمة المجتمع.
+    </p>
+
+    <a href="#join" class="main-button">
+      سجل معنا
+    </a>
+
+  </section>
+
+
+  <!-- الخدمات -->
+
+  <section id="services">
+
+    <h2>خدماتنا</h2>
+
+    <div class="services">
+
+      <div class="card">
+
+        <div class="icon">🌱</div>
+
+        <h3>إصحاح البيئة</h3>
+
+        <p>
+          المساهمة في تحسين البيئة والنظافة العامة
+          والحد من المخاطر البيئية.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🏥</div>
+
+        <h3>الصحة العامة</h3>
+
+        <p>
+          دعم برامج الصحة العامة والتوعية الصحية
+          وخدمة المجتمع.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">📢</div>
+
+        <h3>التوعية الصحية والبيئية</h3>
+
+        <p>
+          نشر الوعي الصحي والبيئي بين أفراد المجتمع.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🎓</div>
+
+        <h3>التدريب والتثقيف</h3>
+
+        <p>
+          المساهمة في التدريب والتثقيف الصحي والبيئي.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🤝</div>
+
+        <h3>المبادرات المجتمعية</h3>
+
+        <p>
+          المشاركة في المبادرات الإنسانية والمجتمعية.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🙋</div>
+
+        <h3>العمل التطوعي</h3>
+
+        <p>
+          تشجيع المتطوعين على المشاركة في خدمة المجتمع.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- من نحن -->
+
+  <section id="about">
+
+    <h2>من نحن</h2>
+
+    <div class="about">
+
+      <p>
+        منظمة الصحة السودانية لحماية البيئة هي منظمة
+        إنسانية وطوعية تهدف إلى المساهمة في تحسين
+        الصحة العامة وحماية البيئة وخدمة المجتمع.
+      </p>
+
+      <br>
+
+      <p>
+        نؤمن بأن المجتمع الصحي يبدأ من بيئة نظيفة
+        ووعي صحي وبيئي جيد.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- التسجيل -->
+
+  <section id="join">
+
+    <h2>التسجيل كعضو</h2>
+
+    <p class="join-text">
+      إذا كنت ترغب في الانضمام إلى المنظمة،
+      املأ البيانات التالية ثم اضغط على إرسال طلب التسجيل.
+    </p>
+
+
+    <form onsubmit="sendMembershipEmail(event)">
+
+      <input
+        type="text"
+        id="full_name"
+        placeholder="الاسم الكامل"
+        required
+      >
+
+
+      <input
+        type="tel"
+        id="phone"
+        placeholder="رقم الهاتف / واتساب"
+        required
+      >
+
+
+      <input
+        type="email"
+        id="email"
+        placeholder="البريد الإلكتروني"
+      >
+
+
+      <input
+        type="text"
+        id="city"
+        placeholder="الولاية / المدينة"
+      >
+
+
+      <select
+        id="membership_type"
+        required
+      >
+
+        <option value="">
+          اختر نوع العضوية
+        </option>
+
+        <option>
+          عضو متطوع
+        </option>
+
+        <option>
+          عضو عادي
+        </option>
+
+        <option>
+          عضو داعم
+        </option>
+
+      </select>
+
+
+      <textarea
+        id="notes"
+        placeholder="ملاحظات إضافية"
+      ></textarea>
+
+
+      <button type="submit">
+        📧 إرسال طلب التسجيل
+      </button>
+
+    </form>
+
+  </section>
+
+
+  <!-- الاتصال -->
+
+  <section id="contact">
+
+    <h2>اتصل بنا</h2>
+
+    <div class="contact">
+
+      <p>
+        📍
+        <strong>العنوان:</strong>
+        السودان - ربك - مربع 16 - جوار مستوصف ابن نفيس
+      </p>
+
+
+      <p>
+        🕐
+        <strong>ساعات العمل:</strong>
+        8 صباحًا - 3 مساءً
+      </p>
+
+
+      <p>
+        📱
+        <strong>تواصل معنا عبر واتساب:</strong>
+      </p>
+
+
+      <a
+        class="whatsapp"
+        href="https://wa.me/249919627356"
+        target="_blank"
+      >
+        0919627356
+      </a>
+
+
+      <a
+        class="whatsapp"
+        href="https://wa.me/249912776467"
+        target="_blank"
+      >
+        0912776467
+      </a>
+
+
+      <a
+        class="whatsapp"
+        href="https://wa.me/249124151709"
+        target="_blank"
+      >
+        0124151709
+      </a>
+
+
+      <p style="margin-top:25px;">
+        📧
+        <strong>البريد الإلكتروني:</strong>
+      </p>
+
+
+      <p>
+        <a
+          class="email"
+          href="mailto:Hima199th@gmail.com"
+        >
+          Hima199th@gmail.com
+        </a>
+      </p>
+
+
+      <p>
+        <a
+          class="email"
+          href="mailto:belal62100056@gmail.com"
+        >
+          belal62100056@gmail.com
+        </a>
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- أسفل الموقع -->
+
+  <footer>
+
+    <p>
+      © 2026 منظمة الصحة السودانية لحماية البيئة
+    </p>
+
+    <p>
+      Sudanese Health Organization for Environmental Protection
+    </p>
+
+    <p>
+      جميع الحقوق محفوظة
+    </p>
+
+  </footer>
+
+
+  <!-- إرسال طلب التسجيل عبر البريد -->
+
+  <script>
+
+    function sendMembershipEmail(event) {
+
+      event.preventDefault();
+
+      const name =
+        document.getElementById("full_name").value;
+
+      const phone =
+        document.getElementById("phone").value;
+
+      const email =
+        document.getElementById("email").value;
+
+      const city =
+        document.getElementById("city").value;
+
+      const membership =
+        document.getElementById("membership_type").value;
+
+      const notes =
+        document.getElementById("notes").value;
+
+
+      const subject =
+        "طلب تسجيل عضو جديد - منظمة الصحة السودانية لحماية البيئة";
+
+
+      const body =
+        "طلب تسجيل عضو جديد\n\n" +
+
+        "الاسم الكامل: " +
+        name + "\n\n" +
+
+        "رقم الهاتف / واتساب: " +
+        phone + "\n\n" +
+
+        "البريد الإلكتروني: " +
+        email + "\n\n" +
+
+        "الولاية / المدينة: " +
+        city + "\n\n" +
+
+        "نوع العضوية: " +
+        membership + "\n\n" +
+
+        "الملاحظات: " +
+        notes;
+
+
+      window.location.href =
+        "mailto:Hima199th@gmail.com,belal62100056@gmail.com" +
+        "?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+
+    }
+
+  </script>
+
+</body>
+
+</html>
