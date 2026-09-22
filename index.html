@@ -223,6 +223,13 @@
       border-top: 1px solid rgba(255,255,255,0.2);
     }
 
+    .success-note {
+      text-align: center;
+      color: #087443;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
     @media (max-width: 850px) {
       header {
         flex-direction: column;
@@ -405,8 +412,84 @@
 
   <div class="join-box">
 
-    <form 
-      action="https://formsubmit.co/belal62100056@gmail.com" method="POST">
+    <form
+      action="https://formsubmit.co/belal62100056@gmail.com"
+      method="POST">
+
+      <input
+        type="text"
+        name="full_name"
+        placeholder="الاسم الكامل"
+        required
+      >
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="رقم الهاتف / واتساب"
+        required
+      >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="البريد الإلكتروني"
+      >
+
+      <input
+        type="text"
+        name="city"
+        placeholder="الولاية / المدينة"
+      >
+
+      <select
+        name="membership_type"
+        required>
+
+        <option value="">
+          اختر نوع العضوية
+        </option>
+
+        <option value="عضو جديد">
+          عضو جديد
+        </option>
+
+        <option value="متطوع">
+          متطوع
+        </option>
+
+        <option value="عضو داعم">
+          عضو داعم
+        </option>
+
+      </select>
+
+
+      <textarea
+        name="notes"
+        placeholder="ملاحظات إضافية"></textarea>
+
+
+      <input
+        type="hidden"
+        name="_subject"
+        value="طلب تسجيل مشترك جديد - منظمة الصحة السودانية لحماية البيئة"
+      >
+
+      <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+      >
+
+
+      <button
+        type="submit"
+        class="btn btn-primary">
+
+        إرسال طلب التسجيل
+
+      </button>
 
     </form>
 
@@ -441,7 +524,7 @@
       <div class="icon">📧</div>
       <h3>البريد الإلكتروني</h3>
       <p>
-        أرسل لنا استفسارك أو مقترحك.
+        belal62100056@gmail.com
       </p>
     </div>
 
@@ -449,7 +532,7 @@
       <div class="icon">📍</div>
       <h3>موقع المنظمة</h3>
       <p>
-        السودان
+        ربك - مربع 16 - جوار مستوصف ابن نفيس
       </p>
     </div>
 
@@ -472,19 +555,23 @@
 
     <div>
       <h3>روابط سريعة</h3>
+
       <a href="#home">الرئيسية</a>
       <a href="#services">الخدمات</a>
       <a href="#about">من نحن</a>
       <a href="#join">إضافة مشترك</a>
+
     </div>
 
 
     <div>
       <h3>English</h3>
+
       <p>
         Sudanese Health Organization
         for Environmental Protection
       </p>
+
     </div>
 
   </div>
