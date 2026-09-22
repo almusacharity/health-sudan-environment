@@ -1,857 +1,495 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>منظمة الصحة السودانية لحماية البيئة</title>
 
-  <style>
+  <meta name="description"
+        content="منظمة الصحة السودانية لحماية البيئة - منظمة إنسانية وطوعية تهتم بإصحاح البيئة والصحة العامة والتوعية الصحية وحماية البيئة.">
 
+  <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       font-family: Arial, Tahoma, sans-serif;
-      background: #f4f8f6;
-      color: #26332d;
-      line-height: 1.8;
+      background: #f4f8f5;
+      color: #222;
+      line-height: 1.7;
     }
 
     header {
-      background: rgba(4, 91, 65, 0.97);
+      background: #087f3d;
       color: white;
-      padding: 18px 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+      padding: 25px 15px;
+      text-align: center;
     }
 
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 16px;
     }
 
     nav {
+      background: #056b33;
       display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 12px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+      padding: 8px 14px;
+      border-radius: 6px;
     }
 
     nav a:hover {
-      color: #d9f99d;
+      background: #075a2c;
     }
 
     .hero {
-      min-height: 600px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
       text-align: center;
-      color: white;
-      padding: 60px 20px;
-
-      background:
-        linear-gradient(
-          rgba(0, 75, 53, 0.72),
-          rgba(0, 75, 53, 0.72)
-        ),
-        url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1800&q=85");
-
-      background-size: cover;
-      background-position: center;
-    }
-
-    .hero-content {
-      max-width: 850px;
-    }
-
-    .hero-icon {
-      font-size: 65px;
-      margin-bottom: 15px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 18px;
-      line-height: 1.3;
+      background: white;
     }
 
     .hero h2 {
-      font-size: 25px;
-      font-weight: normal;
+      color: #087f3d;
+      font-size: 32px;
       margin-bottom: 15px;
     }
 
     .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn-main {
-      background: white;
-      color: #087f5b;
-    }
-
-    .btn-main:hover {
-      transform: translateY(-3px);
-    }
-
-    .btn-whatsapp {
-      background: #25D366;
-      color: white;
-    }
-
-    .btn-whatsapp:hover {
-      transform: translateY(-3px);
-    }
-
-    section {
-      max-width: 1250px;
-      margin: auto;
-      padding: 75px 6%;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 45px;
-    }
-
-    .section-title h2 {
-      color: #087f5b;
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
-
-    .section-title p {
-      color: #66736d;
-      font-size: 17px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      padding: 30px 25px;
-      border-radius: 18px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    }
-
-    .icon {
-      font-size: 48px;
-      margin-bottom: 12px;
-    }
-
-    .card h3 {
-      color: #087f5b;
-      margin-bottom: 10px;
-      font-size: 21px;
-    }
-
-    .about-box {
-      background: white;
-      padding: 45px;
-      border-radius: 20px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
-      text-align: center;
-    }
-
-    .about-box h3 {
-      color: #087f5b;
-      font-size: 27px;
-      margin-bottom: 8px;
-    }
-
-    .english-name {
-      color: #777;
       font-size: 18px;
       margin-bottom: 25px;
     }
 
-    .join-area {
-      background: linear-gradient(135deg, #e5f7ef, #f7fcf9);
+    .button {
+      display: inline-block;
+      background: #087f3d;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    .join-box {
+    section {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 35px 20px;
       background: white;
-      max-width: 750px;
-      margin: auto;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+      border-radius: 12px;
+    }
+
+    section h2 {
+      color: #087f3d;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 27px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f1f8f3;
+      padding: 25px 18px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #d7eadc;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: #087f3d;
+      margin-bottom: 8px;
+    }
+
+    .about {
+      text-align: center;
+      font-size: 18px;
     }
 
     form {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+      max-width: 700px;
+      margin: auto;
     }
 
     input,
     select,
     textarea {
       width: 100%;
-      padding: 15px;
-      border: 1px solid #d5ddd9;
-      border-radius: 10px;
+      padding: 13px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 7px;
       font-size: 16px;
-      outline: none;
-      background: #fbfdfc;
-    }
-
-    input:focus,
-    select:focus,
-    textarea:focus {
-      border-color: #087f5b;
+      font-family: inherit;
     }
 
     textarea {
-      min-height: 130px;
+      min-height: 120px;
       resize: vertical;
     }
 
     button {
-      border: none;
-      padding: 15px;
-      border-radius: 10px;
-      background: #087f5b;
+      width: 100%;
+      padding: 14px;
+      background: #087f3d;
       color: white;
-      font-size: 18px;
+      border: none;
+      border-radius: 7px;
+      font-size: 17px;
       font-weight: bold;
       cursor: pointer;
-      transition: 0.3s;
     }
 
     button:hover {
-      background: #056044;
-      transform: translateY(-2px);
+      background: #056b33;
     }
 
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-
-    .contact-card {
-      background: white;
-      padding: 30px;
-      border-radius: 18px;
+    .contact {
       text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
     }
 
-    .contact-card h3 {
-      color: #087f5b;
-      margin-bottom: 15px;
+    .contact p {
+      margin: 10px 0;
     }
 
-    .contact-card a {
-      color: #087f5b;
+    .whatsapp {
+      display: inline-block;
+      margin: 6px;
+      padding: 10px 16px;
+      background: #25D366;
+      color: white;
       text-decoration: none;
+      border-radius: 7px;
       font-weight: bold;
     }
 
-    .contact-card a:hover {
-      text-decoration: underline;
-    }
-
-    .whatsapp-number {
-      display: block;
-      background: #eefaf3;
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 8px;
+    .email {
+      color: #087f3d;
+      font-weight: bold;
+      text-decoration: none;
     }
 
     footer {
-      background: #064d38;
+      background: #056b33;
       color: white;
-      padding: 55px 6% 25px;
-    }
-
-    .footer-grid {
-      max-width: 1250px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 35px;
-    }
-
-    footer h3 {
-      margin-bottom: 15px;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      margin: 7px 0;
-    }
-
-    footer a:hover {
-      color: #d9f99d;
-    }
-
-    .copyright {
-      max-width: 1250px;
-      margin: 35px auto 0;
-      padding-top: 20px;
       text-align: center;
-      border-top: 1px solid rgba(255,255,255,0.2);
+      padding: 25px 15px;
+      margin-top: 30px;
     }
 
-    @media (max-width: 700px) {
-
-      header {
-        justify-content: center;
-      }
-
-      .logo {
-        text-align: center;
-        font-size: 17px;
-      }
-
-      nav {
-        gap: 10px;
-        font-size: 14px;
-      }
-
-      .hero {
-        min-height: 520px;
-      }
-
-      .hero h1 {
-        font-size: 32px;
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 23px;
       }
 
       .hero h2 {
-        font-size: 20px;
-      }
-
-      .hero p {
-        font-size: 17px;
+        font-size: 26px;
       }
 
       section {
-        padding: 55px 5%;
-      }
-
-      .section-title h2 {
-        font-size: 28px;
-      }
-
-      .about-box,
-      .join-box {
-        padding: 25px 20px;
+        margin: 15px 10px;
+        padding: 25px 15px;
       }
     }
-
   </style>
 </head>
 
 <body>
 
+  <!-- Header -->
   <header>
-
-    <div class="logo">
-      🌿 منظمة الصحة السودانية لحماية البيئة
-    </div>
-
-    <nav>
-      <a href="#home">الرئيسية</a>
-      <a href="#services">الخدمات</a>
-      <a href="#about">من نحن</a>
-      <a href="#join">التسجيل</a>
-      <a href="#contact">تواصل معنا</a>
-    </nav>
-
+    <h1>منظمة الصحة السودانية لحماية البيئة</h1>
+    <p>Sudanese Health Organization for Environmental Protection</p>
+    <p>منظمة إنسانية وطوعية لخدمة المجتمع</p>
   </header>
 
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#about">من نحن</a>
+    <a href="#join">التسجيل</a>
+    <a href="#contact">اتصل بنا</a>
+  </nav>
+
+  <!-- Hero -->
   <section class="hero" id="home">
+    <h2>معًا من أجل صحة أفضل وبيئة أفضل</h2>
 
-    <div class="hero-content">
+    <p>
+      نعمل من أجل تعزيز الصحة العامة وإصحاح البيئة
+      ونشر الوعي الصحي والبيئي وخدمة المجتمع.
+    </p>
 
-      <div class="hero-icon">🌿🇸🇩</div>
-
-      <h1>
-        منظمة الصحة السودانية لحماية البيئة
-      </h1>
-
-      <h2>
-        Sudanese Health Organization for Environmental Protection
-      </h2>
-
-      <p>
-        نحو صحة أفضل وبيئة أكثر أمانًا ومجتمع أكثر صحة
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="#join" class="btn btn-main">
-          📝 إضافة مشترك جديد
-        </a>
-
-        <a
-          href="https://wa.me/249919627356"
-          target="_blank"
-          class="btn btn-whatsapp"
-        >
-          📱 تواصل معنا عبر واتساب
-        </a>
-
-      </div>
-
-    </div>
-
+    <a href="#join" class="button">سجل معنا</a>
   </section>
 
+  <!-- Services -->
   <section id="services">
-
-    <div class="section-title">
-
-      <h2>خدماتنا</h2>
-
-      <p>
-        نعمل من أجل صحة الإنسان وحماية البيئة وخدمة المجتمع
-      </p>
-
-    </div>
+    <h2>خدماتنا</h2>
 
     <div class="services">
 
       <div class="card">
-
-        <div class="icon">🌿</div>
-
-        <h3>اصحاح البيئة</h3>
-
+        <div class="icon">🌱</div>
+        <h3>إصحاح البيئة</h3>
         <p>
-          المساهمة في تحسين البيئة والنظافة والصحة البيئية.
+          المساهمة في تحسين البيئة والنظافة العامة
+          والحد من المخاطر البيئية.
         </p>
-
       </div>
 
       <div class="card">
-
         <div class="icon">🏥</div>
-
         <h3>الصحة العامة</h3>
-
         <p>
-          دعم وتعزيز الوعي والممارسات الصحية داخل المجتمع.
+          دعم ونشر برامج التوعية الصحية
+          والمبادرات المجتمعية.
         </p>
-
       </div>
 
       <div class="card">
-
         <div class="icon">📢</div>
-
-        <h3>التوعية الصحية</h3>
-
+        <h3>التوعية</h3>
         <p>
-          نشر المعلومات والتوعية المتعلقة بالصحة والبيئة.
+          نشر التوعية الصحية والبيئية بين أفراد المجتمع.
         </p>
-
       </div>
 
       <div class="card">
-
-        <div class="icon">🤝</div>
-
-        <h3>المبادرات المجتمعية</h3>
-
-        <p>
-          دعم وتنفيذ المبادرات التي تخدم المجتمع.
-        </p>
-
-      </div>
-
-      <div class="card">
-
         <div class="icon">🎓</div>
-
-        <h3>التدريب والتوعية</h3>
-
+        <h3>التدريب والتثقيف</h3>
         <p>
-          تنظيم برامج وأنشطة تدريبية وتوعوية.
+          المساهمة في برامج التدريب والتثقيف الصحي والبيئي.
         </p>
-
       </div>
 
       <div class="card">
-
-        <div class="icon">❤️</div>
-
-        <h3>العمل التطوعي</h3>
-
+        <div class="icon">🤝</div>
+        <h3>المبادرات المجتمعية</h3>
         <p>
-          تشجيع المشاركة في الأعمال الإنسانية والتطوعية.
+          المشاركة في المبادرات الإنسانية والمجتمعية.
         </p>
+      </div>
 
+      <div class="card">
+        <div class="icon">🙋</div>
+        <h3>العمل التطوعي</h3>
+        <p>
+          تشجيع المتطوعين على المشاركة في خدمة المجتمع.
+        </p>
       </div>
 
     </div>
-
   </section>
 
+  <!-- About -->
   <section id="about">
+    <h2>من نحن</h2>
 
-    <div class="section-title">
-
-      <h2>من نحن</h2>
-
-    </div>
-
-    <div class="about-box">
-
-      <h3>
-        منظمة الصحة السودانية لحماية البيئة
-      </h3>
-
-      <div class="english-name">
-        Sudanese Health Organization for Environmental Protection
-      </div>
-
+    <div class="about">
       <p>
-        منظمة إنسانية وتطوعية تهدف إلى المساهمة في تحسين
+        منظمة الصحة السودانية لحماية البيئة هي منظمة
+        إنسانية وطوعية تهدف إلى المساهمة في تحسين
         الصحة العامة وحماية البيئة وخدمة المجتمع.
       </p>
 
       <br>
 
       <p>
-        نسعى من خلال العمل المجتمعي والتوعية والمبادرات
-        إلى بناء مجتمع أكثر صحة وبيئة أكثر أمانًا.
+        نؤمن بأن المجتمع الصحي يبدأ من بيئة نظيفة
+        ووعي صحي وبيئي جيد.
       </p>
-
     </div>
-
   </section>
 
-  <section id="join" class="join-area">
+  <!-- Join -->
+  <section id="join">
+    <h2>التسجيل كعضو</h2>
 
-    <div class="section-title">
+    <p style="text-align:center; margin-bottom:20px;">
+      يمكنك إرسال طلب التسجيل للانضمام إلى المنظمة.
+    </p>
 
-      <h2>إضافة مشترك جديد</h2>
+    <form
+      action="https://formsubmit.co/Hima199th@gmail.com"
+      method="POST"
+    >
 
-      <p>
-        سجل بياناتك للانضمام والمشاركة في أعمال المنظمة
-      </p>
-
-    </div>
-
-    <div class="join-box">
-
-      <form
-        action="https://script.google.com/macros/s/AKfycbyVcDpfUhcCelz4iL7KPXZhj_oQ_0z0YpqKS31Y3HvJbheR1nWjpAQxRZe-trbRzLK-/exec"
-        method="POST"
+      <!-- إرسال نسخة إلى الإيميل الثاني -->
+      <input
+        type="hidden"
+        name="_cc"
+        value="belal62100056@gmail.com"
       >
 
-        <input
-          type="text"
-          name="full_name"
-          placeholder="الاسم الكامل"
-          required
-        >
+      <!-- عنوان الرسالة -->
+      <input
+        type="hidden"
+        name="_subject"
+        value="طلب تسجيل عضو جديد - منظمة الصحة السودانية لحماية البيئة"
+      >
 
-        <input
-          type="tel"
-          name="phone"
-          placeholder="رقم الهاتف / واتساب"
-          required
-        >
+      <!-- تعطيل اختبار CAPTCHA -->
+      <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+      >
 
-        <input
-          type="email"
-          name="email"
-          placeholder="البريد الإلكتروني"
-        >
+      <input
+        type="text"
+        name="الاسم الكامل"
+        placeholder="الاسم الكامل"
+        required
+      >
 
-        <input
-          type="text"
-          name="city"
-          placeholder="الولاية / المدينة"
-        >
+      <input
+        type="tel"
+        name="رقم الهاتف"
+        placeholder="رقم الهاتف / واتساب"
+        required
+      >
 
-        <select
-          name="membership_type"
-          required
-        >
+      <input
+        type="email"
+        name="البريد الإلكتروني"
+        placeholder="البريد الإلكتروني"
+      >
 
-          <option value="">
-            اختر نوع العضوية
-          </option>
+      <input
+        type="text"
+        name="الولاية / المدينة"
+        placeholder="الولاية / المدينة"
+      >
 
-          <option value="عضو جديد">
-            عضو جديد
-          </option>
+      <select name="نوع العضوية" required>
+        <option value="">اختر نوع العضوية</option>
+        <option>عضو متطوع</option>
+        <option>عضو عادي</option>
+        <option>عضو داعم</option>
+      </select>
 
-          <option value="متطوع">
-            متطوع
-          </option>
+      <textarea
+        name="الملاحظات"
+        placeholder="ملاحظات إضافية"
+      ></textarea>
 
-          <option value="داعم">
-            داعم
-          </option>
+      <button type="submit">
+        إرسال طلب التسجيل
+      </button>
 
-        </select>
-
-        <textarea
-          name="notes"
-          placeholder="ملاحظات إضافية"
-        ></textarea>
-
-        <button type="submit">
-          إرسال طلب التسجيل 📩
-        </button>
-
-      </form>
-
-    </div>
-
+    </form>
   </section>
 
+  <!-- Contact -->
   <section id="contact">
+    <h2>اتصل بنا</h2>
 
-    <div class="section-title">
-
-      <h2>تواصل معنا</h2>
+    <div class="contact">
 
       <p>
-        نحن سعداء بتواصلكم معنا
+        📍 <strong>العنوان:</strong>
+        السودان - ربك - مربع 16 - جوار مستوصف ابن نفيس
+      </p>
+
+      <p>
+        🕐 <strong>ساعات العمل:</strong>
+        8 صباحًا - 3 مساءً
+      </p>
+
+      <p>
+        📱 <strong>واتساب:</strong>
+      </p>
+
+      <a
+        class="whatsapp"
+        href="https://wa.me/249919627356"
+        target="_blank"
+      >
+        0919627356
+      </a>
+
+      <a
+        class="whatsapp"
+        href="https://wa.me/249912776467"
+        target="_blank"
+      >
+        0912776467
+      </a>
+
+      <a
+        class="whatsapp"
+        href="https://wa.me/249124151709"
+        target="_blank"
+      >
+        0124151709
+      </a>
+
+      <p style="margin-top:20px;">
+        📧 <strong>البريد الإلكتروني:</strong>
+      </p>
+
+      <p>
+        <a
+          class="email"
+          href="mailto:Hima199th@gmail.com"
+        >
+          Hima199th@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <a
+          class="email"
+          href="mailto:belal62100056@gmail.com"
+        >
+          belal62100056@gmail.com
+        </a>
       </p>
 
     </div>
-
-    <div class="contact-grid">
-
-      <div class="contact-card">
-
-        <div class="icon">📱</div>
-
-        <h3>واتساب</h3>
-
-        <p>
-          تواصل معنا مباشرة:
-        </p>
-
-        <a
-          class="whatsapp-number"
-          href="https://wa.me/249919627356"
-          target="_blank"
-        >
-          📱 0919627356
-        </a>
-
-        <a
-          class="whatsapp-number"
-          href="https://wa.me/249912776467"
-          target="_blank"
-        >
-          📱 0912776467
-        </a>
-
-        <a
-          class="whatsapp-number"
-          href="https://wa.me/249124151709"
-          target="_blank"
-        >
-          📱 0124151709
-        </a>
-
-      </div>
-
-      <div class="contact-card">
-
-        <div class="icon">📧</div>
-
-        <h3>البريد الإلكتروني</h3>
-
-        <p>
-          <a href="mailto:Hima199th@gmail.com">
-            Hima199th@gmail.com
-          </a>
-        </p>
-
-        <br>
-
-        <p>
-          <a href="mailto:belal62100056@gmail.com">
-            belal62100056@gmail.com
-          </a>
-        </p>
-
-      </div>
-
-      <div class="contact-card">
-
-        <div class="icon">📍</div>
-
-        <h3>موقع المنظمة</h3>
-
-        <p>
-          السودان - ربك
-        </p>
-
-        <p>
-          مربع 16
-        </p>
-
-        <p>
-          جوار مستوصف ابن نفيس
-        </p>
-
-      </div>
-
-      <div class="contact-card">
-
-        <div class="icon">🕐</div>
-
-        <h3>أوقات العمل</h3>
-
-        <p>
-          من الساعة 8 صباحًا
-        </p>
-
-        <p>
-          إلى الساعة 3 مساءً
-        </p>
-
-      </div>
-
-    </div>
-
   </section>
 
+  <!-- Footer -->
   <footer>
-
-    <div class="footer-grid">
-
-      <div>
-
-        <h3>
-          🌿 منظمة الصحة السودانية لحماية البيئة
-        </h3>
-
-        <p>
-          صحة أفضل، بيئة أفضل، مجتمع أفضل.
-        </p>
-
-        <br>
-
-        <p>
-          Sudanese Health Organization
-          for Environmental Protection
-        </p>
-
-      </div>
-
-      <div>
-
-        <h3>روابط سريعة</h3>
-
-        <a href="#home">الرئيسية</a>
-
-        <a href="#services">الخدمات</a>
-
-        <a href="#about">من نحن</a>
-
-        <a href="#join">إضافة مشترك</a>
-
-        <a href="#contact">تواصل معنا</a>
-
-      </div>
-
-      <div>
-
-        <h3>واتساب</h3>
-
-        <a
-          href="https://wa.me/249919627356"
-          target="_blank"
-        >
-          0919627356
-        </a>
-
-        <a
-          href="https://wa.me/249912776467"
-          target="_blank"
-        >
-          0912776467
-        </a>
-
-        <a
-          href="https://wa.me/249124151709"
-          target="_blank"
-        >
-          0124151709
-        </a>
-
-      </div>
-
-    </div>
-
-    <div class="copyright">
-
+    <p>
       © 2026 منظمة الصحة السودانية لحماية البيئة
+    </p>
 
-      <br>
+    <p>
+      Sudanese Health Organization for Environmental Protection
+    </p>
 
+    <p>
       جميع الحقوق محفوظة
-
-    </div>
-
+    </p>
   </footer>
 
 </body>
