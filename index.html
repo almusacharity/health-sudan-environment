@@ -8,9 +8,10 @@
   <title>منظمة الصحة السودانية لحماية البيئة</title>
 
   <meta name="description"
-        content="منظمة الصحة السودانية لحماية البيئة - منظمة إنسانية وطوعية تهدف إلى خدمة المجتمع وحماية البيئة وتعزيز الصحة العامة.">
+        content="منظمة الصحة السودانية لحماية البيئة - منظمة إنسانية وطوعية تهتم بإصحاح البيئة والصحة العامة وحماية البيئة وخدمة المجتمع.">
 
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -99,10 +100,6 @@
       border-radius: 8px;
       font-weight: bold;
       font-size: 17px;
-    }
-
-    .main-button:hover {
-      background: #056b33;
     }
 
     section {
@@ -266,13 +263,17 @@
       section h2 {
         font-size: 25px;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- رأس الموقع -->
+
+  <!-- HEADER -->
 
   <header>
 
@@ -291,7 +292,7 @@
   </header>
 
 
-  <!-- القائمة -->
+  <!-- NAVIGATION -->
 
   <nav>
 
@@ -308,7 +309,7 @@
   </nav>
 
 
-  <!-- الصفحة الرئيسية -->
+  <!-- HOME -->
 
   <section class="hero" id="home">
 
@@ -328,13 +329,14 @@
   </section>
 
 
-  <!-- الخدمات -->
+  <!-- SERVICES -->
 
   <section id="services">
 
     <h2>خدماتنا</h2>
 
     <div class="services">
+
 
       <div class="card">
 
@@ -415,12 +417,13 @@
 
       </div>
 
+
     </div>
 
   </section>
 
 
-  <!-- من نحن -->
+  <!-- ABOUT -->
 
   <section id="about">
 
@@ -446,23 +449,26 @@
   </section>
 
 
-  <!-- التسجيل -->
+  <!-- JOIN -->
 
   <section id="join">
 
     <h2>التسجيل كعضو</h2>
 
     <p class="join-text">
-      إذا كنت ترغب في الانضمام إلى المنظمة،
-      املأ البيانات التالية ثم اضغط على إرسال طلب التسجيل.
+      املأ البيانات التالية لإرسال طلب التسجيل.
     </p>
 
 
-    <form onsubmit="sendMembershipEmail(event)">
+    <form
+      action="https://script.google.com/macros/s/AKfycbyVcDpfUhcCelz4iL7KPXZhj_oQ_0z0YpqKS31Y3HvJbheR1nWjpAQxRZe-trbRzLK-/exec"
+      method="POST"
+    >
+
 
       <input
         type="text"
-        id="full_name"
+        name="full_name"
         placeholder="الاسم الكامل"
         required
       >
@@ -470,7 +476,7 @@
 
       <input
         type="tel"
-        id="phone"
+        name="phone"
         placeholder="رقم الهاتف / واتساب"
         required
       >
@@ -478,20 +484,20 @@
 
       <input
         type="email"
-        id="email"
+        name="email"
         placeholder="البريد الإلكتروني"
       >
 
 
       <input
         type="text"
-        id="city"
+        name="city"
         placeholder="الولاية / المدينة"
       >
 
 
       <select
-        id="membership_type"
+        name="membership_type"
         required
       >
 
@@ -499,15 +505,15 @@
           اختر نوع العضوية
         </option>
 
-        <option>
+        <option value="عضو متطوع">
           عضو متطوع
         </option>
 
-        <option>
+        <option value="عضو عادي">
           عضو عادي
         </option>
 
-        <option>
+        <option value="عضو داعم">
           عضو داعم
         </option>
 
@@ -515,27 +521,29 @@
 
 
       <textarea
-        id="notes"
+        name="notes"
         placeholder="ملاحظات إضافية"
       ></textarea>
 
 
       <button type="submit">
-        📧 إرسال طلب التسجيل
+        إرسال طلب التسجيل
       </button>
+
 
     </form>
 
   </section>
 
 
-  <!-- الاتصال -->
+  <!-- CONTACT -->
 
   <section id="contact">
 
     <h2>اتصل بنا</h2>
 
     <div class="contact">
+
 
       <p>
         📍
@@ -609,12 +617,13 @@
         </a>
       </p>
 
+
     </div>
 
   </section>
 
 
-  <!-- أسفل الموقع -->
+  <!-- FOOTER -->
 
   <footer>
 
@@ -632,70 +641,6 @@
 
   </footer>
 
-
-  <!-- إرسال طلب التسجيل عبر البريد -->
-
-  <script>
-
-    function sendMembershipEmail(event) {
-
-      event.preventDefault();
-
-      const name =
-        document.getElementById("full_name").value;
-
-      const phone =
-        document.getElementById("phone").value;
-
-      const email =
-        document.getElementById("email").value;
-
-      const city =
-        document.getElementById("city").value;
-
-      const membership =
-        document.getElementById("membership_type").value;
-
-      const notes =
-        document.getElementById("notes").value;
-
-
-      const subject =
-        "طلب تسجيل عضو جديد - منظمة الصحة السودانية لحماية البيئة";
-
-
-      const body =
-        "طلب تسجيل عضو جديد\n\n" +
-
-        "الاسم الكامل: " +
-        name + "\n\n" +
-
-        "رقم الهاتف / واتساب: " +
-        phone + "\n\n" +
-
-        "البريد الإلكتروني: " +
-        email + "\n\n" +
-
-        "الولاية / المدينة: " +
-        city + "\n\n" +
-
-        "نوع العضوية: " +
-        membership + "\n\n" +
-
-        "الملاحظات: " +
-        notes;
-
-
-      window.location.href =
-        "mailto:Hima199th@gmail.com,belal62100056@gmail.com" +
-        "?subject=" +
-        encodeURIComponent(subject) +
-        "&body=" +
-        encodeURIComponent(body);
-
-    }
-
-  </script>
 
 </body>
 
