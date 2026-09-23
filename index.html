@@ -27,9 +27,10 @@ header {
     text-align: center;
 }
 
+/* شعار المنظمة */
 .logo {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
     border-radius: 50%;
     background: white;
@@ -50,7 +51,7 @@ header h2 {
 
 nav {
     background: white;
-    padding: 12px;
+    padding: 14px 10px;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     position: sticky;
@@ -66,22 +67,14 @@ nav a {
 }
 
 .hero {
-    padding: 55px 20px;
+    padding: 60px 20px;
     text-align: center;
-    background: linear-gradient(
-        rgba(255,255,255,0.92),
-        rgba(255,255,255,0.92)
-    ),
-    url("logo.png");
-
-    background-size: 250px;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: white;
 }
 
 .hero h2 {
     color: #087f5b;
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 15px;
 }
 
@@ -168,10 +161,6 @@ section h2 {
     cursor: pointer;
 }
 
-.subscribe button:hover {
-    background: #065c42;
-}
-
 .contact {
     background: white;
     border-radius: 15px;
@@ -221,7 +210,7 @@ footer {
     }
 
     .hero h2 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     nav a {
@@ -230,8 +219,8 @@ footer {
     }
 
     .logo {
-        width: 110px;
-        height: 110px;
+        width: 120px;
+        height: 120px;
     }
 }
 </style>
@@ -241,36 +230,41 @@ footer {
 
 <header>
 
-    <!-- شعار المنظمة -->
-    <img src="logo.png" alt="شعار منظمة الصحة السودانية لحماية البيئة" class="logo">
+<img
+src="IMG-20260919-WA0004.jpg"
+alt="شعار منظمة الصحة السودانية لحماية البيئة"
+class="logo"
+>
 
-    <h1>منظمة الصحة السودانية لحماية البيئة</h1>
+<h1>منظمة الصحة السودانية لحماية البيئة</h1>
 
-    <h2>Sudanese Organization for Environmental Health Protection</h2>
+<h2>Sudanese Organization for Environmental Health Protection</h2>
 
-    <div class="lang">
-        <button onclick="setArabic()">العربية</button>
-        <button onclick="setEnglish()">English</button>
-    </div>
+<div class="lang">
+<button onclick="setArabic()">العربية</button>
+<button onclick="setEnglish()">English</button>
+</div>
 
 </header>
 
 <nav>
-    <a href="#home">الرئيسية</a>
-    <a href="#about">من نحن</a>
-    <a href="#services">خدماتنا</a>
-    <a href="#subscribe">التسجيل</a>
-    <a href="#contact">تواصل معنا</a>
+
+<a href="#home">الرئيسية</a>
+<a href="#about">من نحن</a>
+<a href="#services">خدماتنا</a>
+<a href="#subscribe">التسجيل</a>
+<a href="#contact">تواصل معنا</a>
+
 </nav>
 
 <section id="home" class="hero">
 
-    <h2>معاً من أجل صحة وبيئة أفضل</h2>
+<h2>معاً من أجل صحة وبيئة أفضل</h2>
 
-    <p>
-        منظمة إنسانية وطوعية تعمل على دعم الصحة العامة
-        وإصحاح البيئة وخدمة المجتمع.
-    </p>
+<p>
+منظمة إنسانية وطوعية تعمل على دعم الصحة العامة
+وإصحاح البيئة وخدمة المجتمع.
+</p>
 
 </section>
 
@@ -278,24 +272,24 @@ footer {
 
 <div class="container">
 
-    <h2>من نحن</h2>
+<h2>من نحن</h2>
 
-    <div class="about">
+<div class="about">
 
-        <p>
-            منظمة الصحة السودانية لحماية البيئة هي منظمة إنسانية
-            وطوعية تهدف إلى المساهمة في تحسين الصحة العامة
-            وإصحاح البيئة وخدمة المجتمع.
-        </p>
+<p>
+منظمة الصحة السودانية لحماية البيئة هي منظمة إنسانية
+وطوعية تهدف إلى المساهمة في تحسين الصحة العامة
+وإصحاح البيئة وخدمة المجتمع.
+</p>
 
-        <br>
+<br>
 
-        <p>
-            نعمل من خلال المبادرات الصحية والبيئية والتوعية
-            والمشاركة المجتمعية لتحقيق بيئة صحية وآمنة للجميع.
-        </p>
+<p>
+نعمل من خلال المبادرات الصحية والبيئية والتوعية
+والمشاركة المجتمعية لتحقيق بيئة صحية وآمنة للجميع.
+</p>
 
-    </div>
+</div>
 
 </div>
 
@@ -305,59 +299,59 @@ footer {
 
 <div class="container">
 
-    <h2>خدماتنا</h2>
+<h2>خدماتنا</h2>
 
-    <div class="services">
+<div class="services">
 
-        <div class="card">
+<div class="card">
 
-            <div class="icon">🏥</div>
+<div class="icon">🏥</div>
 
-            <h3>الصحة العامة</h3>
+<h3>الصحة العامة</h3>
 
-            <p>
-                المساهمة في نشر الوعي الصحي وخدمة المجتمع.
-            </p>
+<p>
+المساهمة في نشر الوعي الصحي وخدمة المجتمع.
+</p>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <div class="icon">🌱</div>
+<div class="icon">🌱</div>
 
-            <h3>إصحاح البيئة</h3>
+<h3>إصحاح البيئة</h3>
 
-            <p>
-                دعم المبادرات المتعلقة بالنظافة وحماية البيئة.
-            </p>
+<p>
+دعم المبادرات المتعلقة بالنظافة وحماية البيئة.
+</p>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <div class="icon">🩺</div>
+<div class="icon">🩺</div>
 
-            <h3>التوعية الصحية</h3>
+<h3>التوعية الصحية</h3>
 
-            <p>
-                نشر المعلومات والتوعية بالممارسات الصحية السليمة.
-            </p>
+<p>
+نشر المعلومات والتوعية بالممارسات الصحية السليمة.
+</p>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <div class="icon">🤝</div>
+<div class="icon">🤝</div>
 
-            <h3>خدمة المجتمع</h3>
+<h3>خدمة المجتمع</h3>
 
-            <p>
-                تنفيذ المبادرات الإنسانية والتطوعية لخدمة المجتمع.
-            </p>
+<p>
+تنفيذ المبادرات الإنسانية والتطوعية لخدمة المجتمع.
+</p>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </div>
 
@@ -367,49 +361,49 @@ footer {
 
 <div class="container">
 
-    <h2>تسجيل المشتركين</h2>
+<h2>تسجيل المشتركين</h2>
 
-    <div class="subscribe">
+<div class="subscribe">
 
-        <p style="text-align:center;">
-            يمكنك التسجيل كمشترك في المنظمة من خلال النموذج التالي.
-        </p>
+<p style="text-align:center;">
+يمكنك التسجيل كمشترك في المنظمة من خلال النموذج التالي.
+</p>
 
-        <form onsubmit="saveSubscriber(event)">
+<form onsubmit="saveSubscriber(event)">
 
-            <input
-                type="text"
-                id="name"
-                placeholder="الاسم الكامل"
-                required
-            >
+<input
+type="text"
+id="name"
+placeholder="الاسم الكامل"
+required
+>
 
-            <input
-                type="tel"
-                id="phone"
-                placeholder="رقم الهاتف"
-                required
-            >
+<input
+type="tel"
+id="phone"
+placeholder="رقم الهاتف"
+required
+>
 
-            <input
-                type="text"
-                id="address"
-                placeholder="العنوان"
-            >
+<input
+type="text"
+id="address"
+placeholder="العنوان"
+>
 
-            <textarea
-                id="message"
-                rows="4"
-                placeholder="ملاحظات أو رسالة"
-            ></textarea>
+<textarea
+id="message"
+rows="4"
+placeholder="ملاحظات أو رسالة"
+></textarea>
 
-            <button type="submit">
-                إرسال طلب التسجيل
-            </button>
+<button type="submit">
+إرسال طلب التسجيل
+</button>
 
-        </form>
+</form>
 
-    </div>
+</div>
 
 </div>
 
@@ -419,47 +413,53 @@ footer {
 
 <div class="container">
 
-    <h2>تواصل معنا</h2>
+<h2>تواصل معنا</h2>
 
-    <div class="contact">
+<div class="contact">
 
-        <p><strong>📍 العنوان:</strong></p>
+<p><strong>📍 العنوان:</strong></p>
 
-        <p>
-            ربك، مربع 16، جوار مستوصف ابن نفيس
-        </p>
+<p>
+ربك، مربع 16، جوار مستوصف ابن نفيس
+</p>
 
-        <br>
+<br>
 
-        <p><strong>🕐 ساعات العمل:</strong></p>
+<p><strong>🕐 ساعات العمل:</strong></p>
 
-        <p>
-            من 8:00 صباحاً إلى 3:00 مساءً
-        </p>
+<p>
+من 8:00 صباحاً إلى 3:00 مساءً
+</p>
 
-        <br>
+<br>
 
-        <p><strong>📱 WhatsApp:</strong></p>
+<p><strong>📱 WhatsApp:</strong></p>
 
-        <a class="whatsapp"
-           href="https://wa.me/249919627356"
-           target="_blank">
-            0919627356
-        </a>
+<a
+class="whatsapp"
+href="https://wa.me/249919627356"
+target="_blank"
+>
+0919627356
+</a>
 
-        <a class="whatsapp"
-           href="https://wa.me/249912776467"
-           target="_blank">
-            0912776467
-        </a>
+<a
+class="whatsapp"
+href="https://wa.me/249912776467"
+target="_blank"
+>
+0912776467
+</a>
 
-        <a class="whatsapp"
-           href="https://wa.me/249124151709"
-           target="_blank">
-            0124151709
-        </a>
+<a
+class="whatsapp"
+href="https://wa.me/249124151709"
+target="_blank"
+>
+0124151709
+</a>
 
-    </div>
+</div>
 
 </div>
 
@@ -467,13 +467,13 @@ footer {
 
 <footer>
 
-    <p>
-        © 2026 منظمة الصحة السودانية لحماية البيئة
-    </p>
+<p>
+© 2026 منظمة الصحة السودانية لحماية البيئة
+</p>
 
-    <p>
-        جميع الحقوق محفوظة
-    </p>
+<p>
+جميع الحقوق محفوظة
+</p>
 
 </footer>
 
@@ -481,65 +481,95 @@ footer {
 
 function saveSubscriber(event) {
 
-    event.preventDefault();
+event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const address = document.getElementById("address").value;
-    const message = document.getElementById("message").value;
+const name =
+document.getElementById("name").value;
 
-    const subscriber = {
-        name: name,
-        phone: phone,
-        address: address,
-        message: message,
-        date: new Date().toLocaleString()
-    };
+const phone =
+document.getElementById("phone").value;
 
-    let subscribers =
-        JSON.parse(localStorage.getItem("subscribers")) || [];
+const address =
+document.getElementById("address").value;
 
-    subscribers.push(subscriber);
+const message =
+document.getElementById("message").value;
 
-    localStorage.setItem(
-        "subscribers",
-        JSON.stringify(subscribers)
-    );
+const subscriber = {
 
-    alert("تم إرسال طلب التسجيل بنجاح. شكراً لك.");
+name: name,
 
-    document.querySelector("form").reset();
+phone: phone,
+
+address: address,
+
+message: message,
+
+date: new Date().toLocaleString()
+
+};
+
+let subscribers =
+JSON.parse(localStorage.getItem("subscribers")) || [];
+
+subscribers.push(subscriber);
+
+localStorage.setItem(
+"subscribers",
+JSON.stringify(subscribers)
+);
+
+alert("تم إرسال طلب التسجيل بنجاح. شكراً لك.");
+
+document.querySelector("form").reset();
+
 }
 
 function setArabic() {
 
-    document.documentElement.lang = "ar";
-    document.documentElement.dir = "rtl";
+document.documentElement.lang = "ar";
 
-    document.querySelector("nav").innerHTML = `
-        <a href="#home">الرئيسية</a>
-        <a href="#about">من نحن</a>
-        <a href="#services">خدماتنا</a>
-        <a href="#subscribe">التسجيل</a>
-        <a href="#contact">تواصل معنا</a>
-    `;
+document.documentElement.dir = "rtl";
+
+document.querySelector("nav").innerHTML = `
+
+<a href="#home">الرئيسية</a>
+
+<a href="#about">من نحن</a>
+
+<a href="#services">خدماتنا</a>
+
+<a href="#subscribe">التسجيل</a>
+
+<a href="#contact">تواصل معنا</a>
+
+`;
+
 }
 
 function setEnglish() {
 
-    document.documentElement.lang = "en";
-    document.documentElement.dir = "ltr";
+document.documentElement.lang = "en";
 
-    document.querySelector("nav").innerHTML = `
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#subscribe">Registration</a>
-        <a href="#contact">Contact</a>
-    `;
+document.documentElement.dir = "ltr";
+
+document.querySelector("nav").innerHTML = `
+
+<a href="#home">Home</a>
+
+<a href="#about">About Us</a>
+
+<a href="#services">Services</a>
+
+<a href="#subscribe">Registration</a>
+
+<a href="#contact">Contact</a>
+
+`;
+
 }
 
 </script>
 
 </body>
-</html>
+    </html>
