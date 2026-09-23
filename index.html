@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 <title>منظمة الصحة السودانية لحماية البيئة</title>
 
 <style>
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,11 +25,10 @@ body {
 header {
     background: linear-gradient(135deg, #087f5b, #0b6b4d);
     color: white;
-    padding: 25px 15px;
     text-align: center;
+    padding: 30px 15px;
 }
 
-/* شعار المنظمة */
 .logo {
     width: 150px;
     height: 150px;
@@ -35,7 +36,7 @@ header {
     border-radius: 50%;
     background: white;
     padding: 5px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 header h1 {
@@ -44,7 +45,7 @@ header h1 {
 }
 
 header h2 {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: normal;
     direction: ltr;
 }
@@ -53,10 +54,10 @@ nav {
     background: white;
     padding: 14px 10px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
 }
 
 nav a {
@@ -81,7 +82,7 @@ nav a {
 .hero p {
     max-width: 850px;
     margin: auto;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .container {
@@ -91,14 +92,14 @@ nav a {
 }
 
 section {
-    padding: 45px 10px;
+    padding: 50px 15px;
 }
 
 section h2 {
     text-align: center;
     color: #087f5b;
-    margin-bottom: 25px;
-    font-size: 27px;
+    margin-bottom: 30px;
+    font-size: 28px;
 }
 
 .about {
@@ -116,7 +117,7 @@ section h2 {
 
 .card {
     background: white;
-    padding: 25px;
+    padding: 30px 20px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 3px 12px rgba(0,0,0,0.08);
@@ -129,7 +130,7 @@ section h2 {
 
 .card h3 {
     color: #087f5b;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .subscribe {
@@ -148,6 +149,7 @@ section h2 {
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
+    font-family: Arial;
 }
 
 .subscribe button {
@@ -166,6 +168,7 @@ section h2 {
     border-radius: 15px;
     padding: 30px;
     text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
 .whatsapp {
@@ -206,7 +209,7 @@ footer {
     }
 
     header h2 {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .hero h2 {
@@ -214,8 +217,8 @@ footer {
     }
 
     nav a {
-        margin: 0 5px;
-        font-size: 14px;
+        margin: 0 4px;
+        font-size: 13px;
     }
 
     .logo {
@@ -223,6 +226,7 @@ footer {
         height: 120px;
     }
 }
+
 </style>
 </head>
 
@@ -236,13 +240,24 @@ alt="شعار منظمة الصحة السودانية لحماية البيئة
 class="logo"
 >
 
-<h1>منظمة الصحة السودانية لحماية البيئة</h1>
+<h1>
+منظمة الصحة السودانية لحماية البيئة
+</h1>
 
-<h2>Sudanese Organization for Environmental Health Protection</h2>
+<h2>
+Sudanese Organization for Environmental Health Protection
+</h2>
 
 <div class="lang">
-<button onclick="setArabic()">العربية</button>
-<button onclick="setEnglish()">English</button>
+
+<button onclick="setArabic()">
+العربية
+</button>
+
+<button onclick="setEnglish()">
+English
+</button>
+
 </div>
 
 </header>
@@ -259,7 +274,9 @@ class="logo"
 
 <section id="home" class="hero">
 
-<h2>معاً من أجل صحة وبيئة أفضل</h2>
+<h2>
+معاً من أجل صحة وبيئة أفضل
+</h2>
 
 <p>
 منظمة إنسانية وطوعية تعمل على دعم الصحة العامة
@@ -365,7 +382,7 @@ class="logo"
 
 <div class="subscribe">
 
-<p style="text-align:center;">
+<p style="text-align:center; margin-bottom:15px;">
 يمكنك التسجيل كمشترك في المنظمة من خلال النموذج التالي.
 </p>
 
@@ -438,24 +455,21 @@ placeholder="ملاحظات أو رسالة"
 <a
 class="whatsapp"
 href="https://wa.me/249919627356"
-target="_blank"
->
+target="_blank">
 0919627356
 </a>
 
 <a
 class="whatsapp"
 href="https://wa.me/249912776467"
-target="_blank"
->
+target="_blank">
 0912776467
 </a>
 
 <a
 class="whatsapp"
 href="https://wa.me/249124151709"
-target="_blank"
->
+target="_blank">
 0124151709
 </a>
 
@@ -498,13 +512,9 @@ document.getElementById("message").value;
 const subscriber = {
 
 name: name,
-
 phone: phone,
-
 address: address,
-
 message: message,
-
 date: new Date().toLocaleString()
 
 };
@@ -534,13 +544,9 @@ document.documentElement.dir = "rtl";
 document.querySelector("nav").innerHTML = `
 
 <a href="#home">الرئيسية</a>
-
 <a href="#about">من نحن</a>
-
 <a href="#services">خدماتنا</a>
-
 <a href="#subscribe">التسجيل</a>
-
 <a href="#contact">تواصل معنا</a>
 
 `;
@@ -556,13 +562,9 @@ document.documentElement.dir = "ltr";
 document.querySelector("nav").innerHTML = `
 
 <a href="#home">Home</a>
-
 <a href="#about">About Us</a>
-
 <a href="#services">Services</a>
-
 <a href="#subscribe">Registration</a>
-
 <a href="#contact">Contact</a>
 
 `;
@@ -572,4 +574,4 @@ document.querySelector("nav").innerHTML = `
 </script>
 
 </body>
-    </html>
+</html>
