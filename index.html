@@ -1,647 +1,545 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>منظمة الصحة السودانية لحماية البيئة</title>
+<title>منظمة الصحة السودانية لحماية البيئة</title>
 
-  <meta name="description"
-        content="منظمة الصحة السودانية لحماية البيئة - منظمة إنسانية وطوعية تهتم بإصحاح البيئة والصحة العامة وحماية البيئة وخدمة المجتمع.">
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-  <style>
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background: #f4f8f5;
+    color: #222;
+    line-height: 1.8;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+header {
+    background: linear-gradient(135deg, #087f5b, #0b6b4d);
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+}
 
-    body {
-      font-family: Arial, Tahoma, sans-serif;
-      background: #f3f8f4;
-      color: #222;
-      line-height: 1.7;
-    }
+.logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+    margin-bottom: 12px;
+}
 
-    header {
-      background: linear-gradient(135deg, #087f3d, #0aa653);
-      color: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
+header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: normal;
+    direction: ltr;
+}
+
+nav {
+    background: white;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    text-decoration: none;
+    color: #087f5b;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.hero {
+    padding: 55px 20px;
+    text-align: center;
+    background: linear-gradient(
+        rgba(255,255,255,0.92),
+        rgba(255,255,255,0.92)
+    ),
+    url("logo.png");
+
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero h2 {
+    color: #087f5b;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 45px 10px;
+}
+
+section h2 {
+    text-align: center;
+    color: #087f5b;
+    margin-bottom: 25px;
+    font-size: 27px;
+}
+
+.about {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.card .icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #087f5b;
+    margin-bottom: 8px;
+}
+
+.subscribe {
+    background: #e8f5ef;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.subscribe input,
+.subscribe textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.subscribe button {
+    width: 100%;
+    padding: 14px;
+    background: #087f5b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background: #065c42;
+}
+
+.contact {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.whatsapp {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+footer {
+    background: #087f5b;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 30px;
+}
+
+.lang {
+    margin-top: 15px;
+}
+
+.lang button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+@media (max-width: 600px) {
 
     header h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
+        font-size: 22px;
     }
 
-    header .english {
-      font-size: 18px;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      font-size: 17px;
-    }
-
-    nav {
-      background: #056b33;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 5px;
-      padding: 12px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 9px 15px;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      background: #075728;
-    }
-
-    .hero {
-      max-width: 1200px;
-      margin: 25px auto;
-      padding: 80px 25px;
-      text-align: center;
-      background: white;
-      border-radius: 15px;
+    header h2 {
+        font-size: 15px;
     }
 
     .hero h2 {
-      color: #087f3d;
-      font-size: 35px;
-      margin-bottom: 18px;
+        font-size: 24px;
     }
 
-    .hero p {
-      font-size: 19px;
-      max-width: 800px;
-      margin: auto auto 25px;
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
     }
 
-    .main-button {
-      display: inline-block;
-      background: #087f3d;
-      color: white;
-      text-decoration: none;
-      padding: 13px 28px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 17px;
+    .logo {
+        width: 110px;
+        height: 110px;
     }
-
-    section {
-      max-width: 1200px;
-      margin: 25px auto;
-      padding: 40px 25px;
-      background: white;
-      border-radius: 15px;
-    }
-
-    section h2 {
-      text-align: center;
-      color: #087f3d;
-      font-size: 29px;
-      margin-bottom: 30px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #f2f8f4;
-      border: 1px solid #d6eadc;
-      border-radius: 12px;
-      padding: 28px 20px;
-      text-align: center;
-      transition: 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-3px);
-    }
-
-    .icon {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    .card h3 {
-      color: #087f3d;
-      margin-bottom: 10px;
-    }
-
-    .about {
-      text-align: center;
-      font-size: 18px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .join-text {
-      text-align: center;
-      margin-bottom: 25px;
-      font-size: 17px;
-    }
-
-    form {
-      max-width: 700px;
-      margin: auto;
-    }
-
-    input,
-    select,
-    textarea {
-      width: 100%;
-      padding: 14px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-      font-family: inherit;
-      background: white;
-    }
-
-    textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    button {
-      width: 100%;
-      padding: 15px;
-      border: none;
-      border-radius: 8px;
-      background: #087f3d;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #056b33;
-    }
-
-    .contact {
-      text-align: center;
-      font-size: 17px;
-    }
-
-    .contact p {
-      margin: 12px 0;
-    }
-
-    .whatsapp {
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 8px;
-      margin: 5px;
-      font-weight: bold;
-    }
-
-    .email {
-      color: #087f3d;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      background: #056b33;
-      color: white;
-      text-align: center;
-      padding: 30px 15px;
-      margin-top: 30px;
-    }
-
-    @media (max-width: 600px) {
-
-      header h1 {
-        font-size: 25px;
-      }
-
-      header .english {
-        font-size: 15px;
-      }
-
-      .hero {
-        padding: 55px 18px;
-        margin: 15px 10px;
-      }
-
-      .hero h2 {
-        font-size: 27px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      section {
-        margin: 15px 10px;
-        padding: 30px 15px;
-      }
-
-      section h2 {
-        font-size: 25px;
-      }
-
-    }
-
-  </style>
+}
+</style>
 </head>
-
 
 <body>
 
+<header>
 
-  <!-- HEADER -->
+    <!-- شعار المنظمة -->
+    <img src="logo.png" alt="شعار منظمة الصحة السودانية لحماية البيئة" class="logo">
 
-  <header>
+    <h1>منظمة الصحة السودانية لحماية البيئة</h1>
 
-    <h1>
-      منظمة الصحة السودانية لحماية البيئة
-    </h1>
+    <h2>Sudanese Organization for Environmental Health Protection</h2>
 
-    <div class="english">
-      Sudanese Health Organization for Environmental Protection
+    <div class="lang">
+        <button onclick="setArabic()">العربية</button>
+        <button onclick="setEnglish()">English</button>
     </div>
 
-    <p>
-      منظمة إنسانية وطوعية لخدمة المجتمع
-    </p>
+</header>
 
-  </header>
-
-
-  <!-- NAVIGATION -->
-
-  <nav>
-
+<nav>
     <a href="#home">الرئيسية</a>
-
-    <a href="#services">خدماتنا</a>
-
     <a href="#about">من نحن</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#subscribe">التسجيل</a>
+    <a href="#contact">تواصل معنا</a>
+</nav>
 
-    <a href="#join">التسجيل</a>
+<section id="home" class="hero">
 
-    <a href="#contact">اتصل بنا</a>
-
-  </nav>
-
-
-  <!-- HOME -->
-
-  <section class="hero" id="home">
-
-    <h2>
-      معًا من أجل صحة أفضل وبيئة أفضل
-    </h2>
+    <h2>معاً من أجل صحة وبيئة أفضل</h2>
 
     <p>
-      نعمل من أجل تعزيز الصحة العامة وإصحاح البيئة
-      ونشر الوعي الصحي والبيئي وخدمة المجتمع.
+        منظمة إنسانية وطوعية تعمل على دعم الصحة العامة
+        وإصحاح البيئة وخدمة المجتمع.
     </p>
 
-    <a href="#join" class="main-button">
-      سجل معنا
-    </a>
+</section>
 
-  </section>
+<section id="about">
 
-
-  <!-- SERVICES -->
-
-  <section id="services">
-
-    <h2>خدماتنا</h2>
-
-    <div class="services">
-
-
-      <div class="card">
-
-        <div class="icon">🌱</div>
-
-        <h3>إصحاح البيئة</h3>
-
-        <p>
-          المساهمة في تحسين البيئة والنظافة العامة
-          والحد من المخاطر البيئية.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">🏥</div>
-
-        <h3>الصحة العامة</h3>
-
-        <p>
-          دعم برامج الصحة العامة والتوعية الصحية
-          وخدمة المجتمع.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">📢</div>
-
-        <h3>التوعية الصحية والبيئية</h3>
-
-        <p>
-          نشر الوعي الصحي والبيئي بين أفراد المجتمع.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">🎓</div>
-
-        <h3>التدريب والتثقيف</h3>
-
-        <p>
-          المساهمة في التدريب والتثقيف الصحي والبيئي.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">🤝</div>
-
-        <h3>المبادرات المجتمعية</h3>
-
-        <p>
-          المشاركة في المبادرات الإنسانية والمجتمعية.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="icon">🙋</div>
-
-        <h3>العمل التطوعي</h3>
-
-        <p>
-          تشجيع المتطوعين على المشاركة في خدمة المجتمع.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- ABOUT -->
-
-  <section id="about">
+<div class="container">
 
     <h2>من نحن</h2>
 
     <div class="about">
 
-      <p>
-        منظمة الصحة السودانية لحماية البيئة هي منظمة
-        إنسانية وطوعية تهدف إلى المساهمة في تحسين
-        الصحة العامة وحماية البيئة وخدمة المجتمع.
-      </p>
+        <p>
+            منظمة الصحة السودانية لحماية البيئة هي منظمة إنسانية
+            وطوعية تهدف إلى المساهمة في تحسين الصحة العامة
+            وإصحاح البيئة وخدمة المجتمع.
+        </p>
 
-      <br>
+        <br>
 
-      <p>
-        نؤمن بأن المجتمع الصحي يبدأ من بيئة نظيفة
-        ووعي صحي وبيئي جيد.
-      </p>
+        <p>
+            نعمل من خلال المبادرات الصحية والبيئية والتوعية
+            والمشاركة المجتمعية لتحقيق بيئة صحية وآمنة للجميع.
+        </p>
 
     </div>
 
-  </section>
+</div>
 
+</section>
 
-  <!-- JOIN -->
+<section id="services">
 
-  <section id="join">
+<div class="container">
 
-    <h2>التسجيل كعضو</h2>
+    <h2>خدماتنا</h2>
 
-    <p class="join-text">
-      املأ البيانات التالية لإرسال طلب التسجيل.
-    </p>
+    <div class="services">
 
+        <div class="card">
 
-    <form
-      action="https://script.google.com/macros/s/AKfycbyVcDpfUhcCelz4iL7KPXZhj_oQ_0z0YpqKS31Y3HvJbheR1nWjpAQxRZe-trbRzLK-/exec"
-      method="POST"
-    >
+            <div class="icon">🏥</div>
 
+            <h3>الصحة العامة</h3>
 
-      <input
-        type="text"
-        name="full_name"
-        placeholder="الاسم الكامل"
-        required
-      >
+            <p>
+                المساهمة في نشر الوعي الصحي وخدمة المجتمع.
+            </p>
 
+        </div>
 
-      <input
-        type="tel"
-        name="phone"
-        placeholder="رقم الهاتف / واتساب"
-        required
-      >
+        <div class="card">
 
+            <div class="icon">🌱</div>
 
-      <input
-        type="email"
-        name="email"
-        placeholder="البريد الإلكتروني"
-      >
+            <h3>إصحاح البيئة</h3>
 
+            <p>
+                دعم المبادرات المتعلقة بالنظافة وحماية البيئة.
+            </p>
 
-      <input
-        type="text"
-        name="city"
-        placeholder="الولاية / المدينة"
-      >
+        </div>
 
+        <div class="card">
 
-      <select
-        name="membership_type"
-        required
-      >
+            <div class="icon">🩺</div>
 
-        <option value="">
-          اختر نوع العضوية
-        </option>
+            <h3>التوعية الصحية</h3>
 
-        <option value="عضو متطوع">
-          عضو متطوع
-        </option>
+            <p>
+                نشر المعلومات والتوعية بالممارسات الصحية السليمة.
+            </p>
 
-        <option value="عضو عادي">
-          عضو عادي
-        </option>
+        </div>
 
-        <option value="عضو داعم">
-          عضو داعم
-        </option>
+        <div class="card">
 
-      </select>
+            <div class="icon">🤝</div>
 
+            <h3>خدمة المجتمع</h3>
 
-      <textarea
-        name="notes"
-        placeholder="ملاحظات إضافية"
-      ></textarea>
+            <p>
+                تنفيذ المبادرات الإنسانية والتطوعية لخدمة المجتمع.
+            </p>
 
+        </div>
 
-      <button type="submit">
-        إرسال طلب التسجيل
-      </button>
+    </div>
 
+</div>
 
-    </form>
+</section>
 
-  </section>
+<section id="subscribe">
 
+<div class="container">
 
-  <!-- CONTACT -->
+    <h2>تسجيل المشتركين</h2>
 
-  <section id="contact">
+    <div class="subscribe">
 
-    <h2>اتصل بنا</h2>
+        <p style="text-align:center;">
+            يمكنك التسجيل كمشترك في المنظمة من خلال النموذج التالي.
+        </p>
+
+        <form onsubmit="saveSubscriber(event)">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="الاسم الكامل"
+                required
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="رقم الهاتف"
+                required
+            >
+
+            <input
+                type="text"
+                id="address"
+                placeholder="العنوان"
+            >
+
+            <textarea
+                id="message"
+                rows="4"
+                placeholder="ملاحظات أو رسالة"
+            ></textarea>
+
+            <button type="submit">
+                إرسال طلب التسجيل
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+    <h2>تواصل معنا</h2>
 
     <div class="contact">
 
+        <p><strong>📍 العنوان:</strong></p>
 
-      <p>
-        📍
-        <strong>العنوان:</strong>
-        السودان - ربك - مربع 16 - جوار مستوصف ابن نفيس
-      </p>
+        <p>
+            ربك، مربع 16، جوار مستوصف ابن نفيس
+        </p>
 
+        <br>
 
-      <p>
-        🕐
-        <strong>ساعات العمل:</strong>
-        8 صباحًا - 3 مساءً
-      </p>
+        <p><strong>🕐 ساعات العمل:</strong></p>
 
+        <p>
+            من 8:00 صباحاً إلى 3:00 مساءً
+        </p>
 
-      <p>
-        📱
-        <strong>تواصل معنا عبر واتساب:</strong>
-      </p>
+        <br>
 
+        <p><strong>📱 WhatsApp:</strong></p>
 
-      <a
-        class="whatsapp"
-        href="https://wa.me/249919627356"
-        target="_blank"
-      >
-        0919627356
-      </a>
-
-
-      <a
-        class="whatsapp"
-        href="https://wa.me/249912776467"
-        target="_blank"
-      >
-        0912776467
-      </a>
-
-
-      <a
-        class="whatsapp"
-        href="https://wa.me/249124151709"
-        target="_blank"
-      >
-        0124151709
-      </a>
-
-
-      <p style="margin-top:25px;">
-        📧
-        <strong>البريد الإلكتروني:</strong>
-      </p>
-
-
-      <p>
-        <a
-          class="email"
-          href="mailto:Hima199th@gmail.com"
-        >
-          Hima199th@gmail.com
+        <a class="whatsapp"
+           href="https://wa.me/249919627356"
+           target="_blank">
+            0919627356
         </a>
-      </p>
 
-
-      <p>
-        <a
-          class="email"
-          href="mailto:belal62100056@gmail.com"
-        >
-          belal62100056@gmail.com
+        <a class="whatsapp"
+           href="https://wa.me/249912776467"
+           target="_blank">
+            0912776467
         </a>
-      </p>
 
+        <a class="whatsapp"
+           href="https://wa.me/249124151709"
+           target="_blank">
+            0124151709
+        </a>
 
     </div>
 
-  </section>
+</div>
 
+</section>
 
-  <!-- FOOTER -->
-
-  <footer>
+<footer>
 
     <p>
-      © 2026 منظمة الصحة السودانية لحماية البيئة
+        © 2026 منظمة الصحة السودانية لحماية البيئة
     </p>
 
     <p>
-      Sudanese Health Organization for Environmental Protection
+        جميع الحقوق محفوظة
     </p>
 
-    <p>
-      جميع الحقوق محفوظة
-    </p>
+</footer>
 
-  </footer>
+<script>
 
+function saveSubscriber(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const address = document.getElementById("address").value;
+    const message = document.getElementById("message").value;
+
+    const subscriber = {
+        name: name,
+        phone: phone,
+        address: address,
+        message: message,
+        date: new Date().toLocaleString()
+    };
+
+    let subscribers =
+        JSON.parse(localStorage.getItem("subscribers")) || [];
+
+    subscribers.push(subscriber);
+
+    localStorage.setItem(
+        "subscribers",
+        JSON.stringify(subscribers)
+    );
+
+    alert("تم إرسال طلب التسجيل بنجاح. شكراً لك.");
+
+    document.querySelector("form").reset();
+}
+
+function setArabic() {
+
+    document.documentElement.lang = "ar";
+    document.documentElement.dir = "rtl";
+
+    document.querySelector("nav").innerHTML = `
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من نحن</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#subscribe">التسجيل</a>
+        <a href="#contact">تواصل معنا</a>
+    `;
+}
+
+function setEnglish() {
+
+    document.documentElement.lang = "en";
+    document.documentElement.dir = "ltr";
+
+    document.querySelector("nav").innerHTML = `
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#subscribe">Registration</a>
+        <a href="#contact">Contact</a>
+    `;
+}
+
+</script>
 
 </body>
-
 </html>
