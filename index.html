@@ -3,262 +3,150 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>منظمة الصحة السودانية لحماية البيئة</title>
-
-<meta name="description"
-content="منظمة الصحة السودانية لحماية البيئة - إصحاح البيئة والصحة العامة وخدمة المجتمع">
 
 <style>
 *{
+  box-sizing:border-box;
   margin:0;
   padding:0;
-  box-sizing:border-box;
+}
+
+html{
   scroll-behavior:smooth;
 }
 
 body{
   font-family:Arial,Tahoma,sans-serif;
-  background:#f4f9f6;
-  color:#183b29;
-  line-height:1.7;
+  background:#f5f8f6;
+  color:#173b2b;
+  line-height:1.8;
 }
-
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-.container{
-  width:100%;
-  max-width:1150px;
-  margin:auto;
-  padding:0 18px;
-}
-
-/* ================= HEADER ================= */
 
 header{
   position:sticky;
   top:0;
-  z-index:9999;
-  background:white;
-  box-shadow:0 2px 15px rgba(0,0,0,.08);
+  z-index:1000;
+  background:#ffffff;
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
 
-.header{
-  min-height:72px;
+.navbar{
+  max-width:1200px;
+  margin:auto;
+  padding:12px 20px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:10px;
+  gap:15px;
 }
 
 .logo-area{
   display:flex;
   align-items:center;
-  gap:9px;
-  min-width:0;
+  gap:10px;
 }
 
-.logo-area img{
-  width:52px;
-  height:52px;
+.logo{
+  width:58px;
+  height:58px;
   object-fit:contain;
   border-radius:50%;
 }
 
-.logo-name{
-  min-width:0;
+.logo-title{
+  font-weight:bold;
+  font-size:17px;
+  color:#126b43;
 }
-
-.logo-name h1{
-  font-size:14px;
-  color:#08783d;
-  line-height:1.3;
-}
-
-.logo-name p{
-  font-size:9px;
-  color:#777;
-  white-space:nowrap;
-}
-
-/* Menu button */
 
 .menu-btn{
+  display:none;
+  font-size:28px;
   border:0;
-  background:#08783d;
-  color:white;
-  width:43px;
-  height:43px;
-  border-radius:10px;
-  font-size:23px;
+  background:none;
   cursor:pointer;
 }
 
-/* Navigation */
-
-.nav-menu{
-  display:none;
-  position:absolute;
-  top:72px;
-  right:0;
-  left:0;
-  background:white;
-  padding:15px 18px 20px;
-  box-shadow:0 8px 20px rgba(0,0,0,.10);
-}
-
-.nav-menu.show{
-  display:block;
-}
-
-.nav-menu a{
-  display:block;
-  padding:12px;
-  border-bottom:1px solid #edf2ef;
-  font-weight:bold;
-  color:#174b32;
-}
-
-.language{
+nav{
   display:flex;
+  align-items:center;
   gap:8px;
-  margin-top:12px;
 }
 
-.language button{
-  flex:1;
-  padding:10px;
-  border:0;
+nav a{
+  text-decoration:none;
+  color:#173b2b;
+  padding:8px 12px;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  background:#e8f5ed;
+  color:#087443;
+}
+
+.lang-btn{
+  border:1px solid #16804f;
+  background:white;
+  color:#16804f;
+  padding:7px 12px;
   border-radius:8px;
   cursor:pointer;
   font-weight:bold;
 }
 
-.ar-btn{
-  background:#08783d;
-  color:white;
-}
-
-.en-btn{
-  background:#e7f4ec;
-  color:#08783d;
-}
-
-/* ================= HERO ================= */
-
 .hero{
-  background:
-  linear-gradient(145deg,rgba(4,91,43,.96),rgba(9,133,67,.90)),
-  url("IMG-20260919-WA0004.jpg");
-
-  background-size:cover;
-  background-position:center;
-
+  background:linear-gradient(135deg,#087443,#1ba565);
   color:white;
+  padding:75px 20px;
   text-align:center;
-  padding:48px 18px 65px;
 }
 
-.hero-logo{
-  width:105px;
-  height:105px;
+.hero img{
+  width:115px;
+  height:115px;
   object-fit:contain;
-  background:white;
   border-radius:50%;
-  padding:8px;
-  box-shadow:0 8px 25px rgba(0,0,0,.2);
+  background:white;
+  padding:5px;
   margin-bottom:18px;
 }
 
-.hero h2{
-  font-size:31px;
-  line-height:1.35;
-  margin-bottom:10px;
-}
-
-.hero .english{
-  font-size:12px;
-  opacity:.9;
-  direction:ltr;
-  margin-bottom:17px;
+.hero h1{
+  font-size:38px;
+  margin-bottom:12px;
 }
 
 .hero p{
-  font-size:16px;
-  max-width:600px;
-  margin:auto auto 25px;
-  opacity:.95;
-}
-
-.hero-buttons{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  max-width:400px;
-  margin:auto;
+  font-size:19px;
+  max-width:750px;
+  margin:0 auto 25px;
 }
 
 .btn{
-  display:block;
-  width:100%;
-  padding:14px;
-  border-radius:11px;
+  display:inline-block;
+  background:white;
+  color:#087443;
+  text-decoration:none;
+  padding:12px 24px;
+  border-radius:10px;
   font-weight:bold;
+  border:0;
+  cursor:pointer;
   font-size:16px;
 }
 
-.btn-white{
-  background:white;
-  color:#08783d;
+.btn:hover{
+  transform:translateY(-2px);
 }
 
-.btn-whatsapp{
-  background:#25d366;
-  color:white;
+.container{
+  width:92%;
+  max-width:1200px;
+  margin:auto;
 }
-
-/* ================= QUICK ================= */
-
-.quick{
-  padding:20px 18px;
-  margin-top:-25px;
-  position:relative;
-  z-index:5;
-}
-
-.quick-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:8px;
-}
-
-.quick-card{
-  background:white;
-  text-align:center;
-  padding:17px 7px;
-  border-radius:13px;
-  box-shadow:0 5px 18px rgba(0,0,0,.08);
-}
-
-.quick-card .icon{
-  font-size:27px;
-}
-
-.quick-card h3{
-  color:#08783d;
-  font-size:12px;
-  margin-top:3px;
-}
-
-.quick-card p{
-  font-size:9px;
-  color:#777;
-}
-
-/* ================= SECTIONS ================= */
 
 section{
   padding:55px 0;
@@ -266,406 +154,345 @@ section{
 
 .section-title{
   text-align:center;
+  font-size:30px;
+  color:#087443;
   margin-bottom:30px;
 }
 
-.section-title h2{
-  color:#08783d;
-  font-size:28px;
-  margin-bottom:7px;
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
 }
 
-.section-title p{
-  color:#777;
-  font-size:14px;
+.card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 4px 18px rgba(0,0,0,.07);
+  text-align:center;
 }
 
-/* ================= ABOUT ================= */
+.card h3{
+  color:#087443;
+  margin-bottom:10px;
+}
+
+.icon{
+  font-size:38px;
+  margin-bottom:8px;
+}
 
 .about{
   background:white;
 }
 
-.about-logo{
+.about-box{
+  max-width:900px;
+  margin:auto;
   text-align:center;
-  margin-bottom:25px;
+  font-size:18px;
 }
 
-.about-logo img{
-  width:180px;
-  height:180px;
-  object-fit:contain;
-  border-radius:20px;
+.mission{
+  background:#eaf6ef;
 }
 
-.about-text h3{
-  color:#08783d;
-  font-size:23px;
-  margin-bottom:12px;
-}
-
-.about-text p{
-  color:#555;
-  font-size:15px;
-  margin-bottom:13px;
-}
-
-.mission-box{
-  background:#edf8f1;
-  border-right:4px solid #08783d;
-  padding:15px;
-  border-radius:10px;
-  font-size:14px;
-}
-
-/* ================= SERVICES ================= */
-
-.services{
-  background:#f4f9f6;
-}
-
-.services-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-}
-
-.service{
+.form-box{
   background:white;
-  border-radius:15px;
-  padding:20px 13px;
-  text-align:center;
-  box-shadow:0 4px 15px rgba(0,0,0,.05);
+  max-width:750px;
+  margin:auto;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 4px 18px rgba(0,0,0,.08);
 }
 
-.service-icon{
-  font-size:34px;
-  margin-bottom:7px;
+.form-group{
+  margin-bottom:16px;
 }
 
-.service h3{
-  color:#08783d;
-  font-size:16px;
-  margin-bottom:5px;
-}
-
-.service p{
-  color:#777;
-  font-size:12px;
-}
-
-/* ================= MISSION ================= */
-
-.big-mission{
-  background:linear-gradient(145deg,#08783d,#064f2b);
-  color:white;
-  text-align:center;
-}
-
-.big-mission h2{
-  font-size:29px;
-  margin-bottom:10px;
-}
-
-.big-mission p{
-  font-size:15px;
-}
-
-/* ================= REGISTER ================= */
-
-.register{
-  background:white;
-}
-
-.form{
-  background:#f4f9f6;
-  padding:20px 15px;
-  border-radius:17px;
-  box-shadow:0 5px 20px rgba(0,0,0,.06);
-}
-
-.field{
-  margin-bottom:15px;
-}
-
-.field label{
+.form-group label{
   display:block;
   font-weight:bold;
-  font-size:13px;
-  margin-bottom:5px;
-  color:#174b32;
+  margin-bottom:6px;
 }
 
-.field input,
-.field select,
-.field textarea{
+.form-group input,
+.form-group select,
+.form-group textarea{
   width:100%;
-  padding:13px;
-  border:1px solid #d2dfd7;
+  padding:12px;
+  border:1px solid #ccd9d1;
   border-radius:9px;
-  background:white;
-  font-family:inherit;
-  font-size:15px;
+  font-size:16px;
   outline:none;
 }
 
-.field textarea{
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:#16804f;
+}
+
+.form-group textarea{
   min-height:110px;
   resize:vertical;
 }
 
-.submit{
+.submit-btn{
   width:100%;
-  border:0;
-  background:#08783d;
+  background:#087443;
   color:white;
-  padding:14px;
-  border-radius:10px;
-  font-size:16px;
+  border:0;
+  padding:13px;
+  border-radius:9px;
+  font-size:17px;
   font-weight:bold;
   cursor:pointer;
 }
 
-#message{
+.submit-btn:hover{
+  background:#065c35;
+}
+
+.success{
+  display:none;
+  margin-top:15px;
+  padding:13px;
+  border-radius:8px;
+  background:#e7f7ed;
+  color:#087443;
   text-align:center;
-  margin-top:12px;
-  color:#08783d;
   font-weight:bold;
-  font-size:14px;
 }
 
-/* ================= CONTACT ================= */
-
-.contact{
-  background:#f4f9f6;
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
 
-.contact-list{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-}
-
-.contact-item{
+.contact-card{
   background:white;
+  padding:22px;
   border-radius:14px;
-  padding:18px;
   text-align:center;
-  box-shadow:0 4px 15px rgba(0,0,0,.05);
+  box-shadow:0 3px 15px rgba(0,0,0,.06);
 }
 
-.contact-item .icon{
-  font-size:30px;
-}
-
-.contact-item h3{
-  color:#08783d;
-  font-size:17px;
-  margin:3px 0;
-}
-
-.contact-item p{
-  color:#666;
-  font-size:14px;
-}
-
-.whatsapp{
+.contact-card a{
   display:inline-block;
   margin-top:8px;
-  background:#25d366;
-  color:white;
-  padding:8px 18px;
-  border-radius:8px;
-  font-size:13px;
+  color:#087443;
+  text-decoration:none;
   font-weight:bold;
 }
 
-/* ================= FOOTER ================= */
-
 footer{
-  background:#063a20;
+  background:#123c29;
   color:white;
   text-align:center;
-  padding:40px 18px 20px;
+  padding:25px 15px;
 }
-
-.footer-logo{
-  width:80px;
-  height:80px;
-  object-fit:contain;
-  background:white;
-  border-radius:50%;
-  padding:6px;
-  margin-bottom:12px;
-}
-
-footer h3{
-  font-size:18px;
-  margin-bottom:8px;
-}
-
-footer p{
-  color:#d4e8db;
-  font-size:13px;
-  margin-bottom:6px;
-}
-
-.footer-bottom{
-  border-top:1px solid rgba(255,255,255,.15);
-  margin-top:25px;
-  padding-top:15px;
-  font-size:11px;
-  color:#a9c8b6;
-}
-
-/* ================= TOP BUTTON ================= */
 
 .top{
   position:fixed;
-  bottom:18px;
-  left:17px;
-  width:43px;
-  height:43px;
-  border:0;
+  bottom:20px;
+  left:20px;
+  width:45px;
+  height:45px;
   border-radius:50%;
-  background:#08783d;
+  border:0;
+  background:#087443;
   color:white;
   font-size:20px;
   cursor:pointer;
-  box-shadow:0 4px 15px rgba(0,0,0,.2);
   display:none;
-  z-index:999;
 }
 
-/* ================= DESKTOP ================= */
-
-@media(min-width:800px){
-
-  .header{
-    padding:0 25px;
-  }
+@media(max-width:850px){
 
   .menu-btn{
+    display:block;
+  }
+
+  nav{
     display:none;
+    position:absolute;
+    top:82px;
+    right:0;
+    left:0;
+    background:white;
+    padding:15px;
+    flex-direction:column;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
   }
 
-  .nav-menu{
-    position:static;
+  nav.show{
     display:flex;
-    align-items:center;
-    gap:5px;
-    padding:0;
-    box-shadow:none;
-    background:none;
   }
 
-  .nav-menu a{
-    border:0;
-    padding:8px 10px;
-    font-size:13px;
+  nav a{
+    width:100%;
+    text-align:center;
   }
 
-  .language{
-    margin:0;
-  }
-
-  .language button{
-    padding:7px 10px;
+  .cards,
+  .contact-grid{
+    grid-template-columns:1fr;
   }
 
   .hero{
-    padding:75px 20px 100px;
+    padding:55px 18px;
   }
 
-  .hero h2{
-    font-size:50px;
+  .hero h1{
+    font-size:29px;
   }
 
-  .hero-buttons{
-    flex-direction:row;
-    max-width:650px;
+  .hero p{
+    font-size:17px;
   }
 
-  .quick{
-    margin-top:-45px;
+  .section-title{
+    font-size:26px;
   }
 
-  .quick-grid{
-    gap:20px;
-  }
-
-  .quick-card{
-    padding:25px;
-  }
-
-  .quick-card h3{
-    font-size:18px;
-  }
-
-  .quick-card p{
-    font-size:13px;
-  }
-
-  .about-layout{
-    display:grid;
-    grid-template-columns:350px 1fr;
-    gap:50px;
-    align-items:center;
-  }
-
-  .services-grid{
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-  }
-
-  .contact-list{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-  }
-
-  .form{
-    max-width:800px;
-    margin:auto;
-    padding:35px;
+  .logo-title{
+    font-size:14px;
   }
 }
 
-/* ================= ENGLISH ================= */
+@media(max-width:420px){
 
-body.english{
-  direction:ltr;
+  .navbar{
+    padding:10px 12px;
+  }
+
+  .logo{
+    width:50px;
+    height:50px;
+  }
+
+  .logo-title{
+    max-width:210px;
+  }
+
+  .hero img{
+    width:100px;
+    height:100px;
+  }
+
+  .hero h1{
+    font-size:25px;
+  }
+
+  .form-box{
+    padding:20px;
+  }
 }
-
-body.english .mission-box{
-  border-right:0;
-  border-left:4px solid #08783d;
-}
-
-body.english .hero .english{
-  text-align:center;
-}
-
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-
 <header>
+  <div class="navbar">
 
-<div class="container header">
+    <div class="logo-area">
+      <img src="IMG-20260919-WA0004.jpg" class="logo" alt="شعار المنظمة">
+      <div class="logo-title">
+        منظمة الصحة السودانية لحماية البيئة
+      </div>
+    </div>
 
-  <div class="logo-area">
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-    <img src="IMG-20260919-WA0004.jpg"
-         alt="شعار المنظمة">
+    <nav id="menu">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">عن المنظمة</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#register">سجل معنا</a>
+      <a href="#contact">اتصل بنا</a>
+      <button class="lang-btn" onclick="changeLanguage()">English</button>
+    </nav>
 
-    <div class="logo-name">
+  </div>
+</header>
 
-      <h1>منظمة الصحة السودانية لحماية البيئة</h1>
+<section class="hero" id="home">
+
+  <img src="IMG-20260919-WA0004.jpg" alt="شعار المنظمة">
+
+  <h1 id="heroTitle">
+    منظمة الصحة السودانية لحماية البيئة
+  </h1>
+
+  <p id="heroText">
+    منظمة إنسانية وطوعية تعمل من أجل إصحاح البيئة وتعزيز الصحة العامة وخدمة المجتمع.
+  </p>
+
+  <a href="#register" class="btn" id="heroBtn">
+    سجل معنا
+  </a>
+
+</section>
+
+<section>
+  <div class="container">
+
+    <h2 class="section-title">مجالات العمل</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🌿</div>
+        <h3>إصحاح البيئة</h3>
+        <p>
+          المساهمة في تحسين البيئة والنظافة والحد من مصادر التلوث.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏥</div>
+        <h3>الصحة العامة</h3>
+        <p>
+          دعم التوعية الصحية والمبادرات التي تخدم صحة المجتمع.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>العمل التطوعي</h3>
+        <p>
+          تشجيع المشاركة المجتمعية والعمل الإنساني والتطوعي.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+
+  <div class="container">
+
+    <h2 class="section-title">عن المنظمة</h2>
+
+    <div class="about-box">
 
       <p>
+        <strong>منظمة الصحة السودانية لحماية البيئة</strong>
+        هي منظمة إنسانية وطوعية تهدف إلى المساهمة في إصحاح البيئة
+        وتعزيز الصحة العامة وخدمة المجتمع من خلال المبادرات والبرامج
+        التوعوية والمجتمعية.
+      </p>
+
+      <br>
+
+      <p>
+        <strong>الاسم بالإنجليزية:</strong><br>
         Sudanese Organization for Environmental Health Protection
       </p>
 
@@ -673,723 +500,408 @@ body.english .hero .english{
 
   </div>
 
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</section>
 
-  <nav class="nav-menu" id="navMenu">
+<section class="mission">
 
-    <a href="#home" onclick="closeMenu()">الرئيسية</a>
+  <div class="container">
 
-    <a href="#about" onclick="closeMenu()">من نحن</a>
+    <h2 class="section-title">رسالتنا</h2>
 
-    <a href="#services" onclick="closeMenu()">خدماتنا</a>
+    <div class="about-box">
 
-    <a href="#register" onclick="closeMenu()">التسجيل</a>
-
-    <a href="#contact" onclick="closeMenu()">اتصل بنا</a>
-
-    <div class="language">
-
-      <button class="ar-btn" onclick="arabic()">عربي</button>
-
-      <button class="en-btn" onclick="english()">English</button>
+      <p>
+        نسعى إلى بناء مجتمع أكثر صحة وبيئة أكثر نظافة من خلال
+        التعاون والعمل التطوعي والمبادرات الإنسانية.
+      </p>
 
     </div>
 
-  </nav>
-
-</div>
-
-</header>
-
-
-<!-- HERO -->
-
-<section class="hero" id="home">
-
-  <img class="hero-logo"
-       src="IMG-20260919-WA0004.jpg"
-       alt="شعار المنظمة">
-
-  <h2 id="heroTitle">
-    معاً من أجل صحة وبيئة أفضل
-  </h2>
-
-  <div class="english">
-    Sudanese Organization for Environmental Health Protection
   </div>
 
-  <p id="heroText">
-    منظمة إنسانية وطوعية تعمل من أجل إصحاح البيئة
-    والصحة العامة وخدمة المجتمع.
-  </p>
+</section>
 
-  <div class="hero-buttons">
+<section id="services">
 
-    <a href="#register"
-       class="btn btn-white"
-       id="joinButton">
-      🤝 سجل معنا
-    </a>
+  <div class="container">
 
-    <a href="https://wa.me/249919627356"
-       target="_blank"
-       class="btn btn-whatsapp">
-      📱 WhatsApp
-    </a>
+    <h2 class="section-title">خدماتنا</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🧹</div>
+        <h3>النظافة وإصحاح البيئة</h3>
+        <p>
+          المشاركة في المبادرات الخاصة بالنظافة وتحسين البيئة.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📢</div>
+        <h3>التوعية الصحية</h3>
+        <p>
+          نشر المعلومات والتوعية المتعلقة بالصحة العامة والوقاية.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">❤️</div>
+        <h3>المبادرات الإنسانية</h3>
+        <p>
+          تنظيم ودعم الأعمال التطوعية والإنسانية لخدمة المجتمع.
+        </p>
+      </div>
+
+    </div>
 
   </div>
 
 </section>
 
+<section id="register">
 
-<!-- QUICK -->
+  <div class="container">
 
-<section class="quick">
+    <h2 class="section-title">سجل معنا</h2>
 
-<div class="container">
+    <div class="form-box">
 
-<div class="quick-grid">
+      <form id="registrationForm">
 
-  <div class="quick-card">
+        <div class="form-group">
+          <label>الاسم الكامل</label>
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="اكتب اسمك الكامل">
+        </div>
 
-    <div class="icon">🌿</div>
+        <div class="form-group">
+          <label>رقم الهاتف</label>
+          <input
+            type="tel"
+            id="phone"
+            required
+            placeholder="مثال: 0912345678">
+        </div>
 
-    <h3>إصحاح البيئة</h3>
+        <div class="form-group">
+          <label>المدينة</label>
+          <input
+            type="text"
+            id="city"
+            required
+            placeholder="اكتب مدينتك">
+        </div>
 
-    <p>بيئة نظيفة وصحية</p>
+        <div class="form-group">
+          <label>نوع المشاركة</label>
+
+          <select id="type" required>
+
+            <option value="">
+              اختر نوع المشاركة
+            </option>
+
+            <option value="عضو">
+              عضو
+            </option>
+
+            <option value="متطوع">
+              متطوع
+            </option>
+
+            <option value="داعم">
+              داعم
+            </option>
+
+          </select>
+
+        </div>
+
+        <div class="form-group">
+          <label>رسالتك</label>
+
+          <textarea
+            id="message"
+            placeholder="اكتب أي ملاحظات أو معلومات إضافية">
+          </textarea>
+
+        </div>
+
+        <button type="submit" class="submit-btn">
+          إرسال طلب التسجيل
+        </button>
+
+        <div id="successMessage" class="success">
+          ✅ تم إرسال طلب التسجيل بنجاح ❤️
+        </div>
+
+      </form>
+
+    </div>
 
   </div>
 
+</section>
 
-  <div class="quick-card">
+<section id="contact">
 
-    <div class="icon">🏥</div>
+  <div class="container">
 
-    <h3>الصحة العامة</h3>
+    <h2 class="section-title">اتصل بنا</h2>
 
-    <p>وعي صحي للمجتمع</p>
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <h3>📍 العنوان</h3>
+        <p>
+          ربك، مربع 16<br>
+          جوار مستوصف ابن نفيس
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h3>🕐 ساعات العمل</h3>
+        <p>
+          من 8:00 صباحًا<br>
+          إلى 3:00 مساءً
+        </p>
+      </div>
+
+      <div class="contact-card">
+
+        <h3>📱 واتساب</h3>
+
+        <a href="https://wa.me/249919627356" target="_blank">
+          0919627356
+        </a>
+
+        <br>
+
+        <a href="https://wa.me/249912776467" target="_blank">
+          0912776467
+        </a>
+
+        <br>
+
+        <a href="https://wa.me/249124151709" target="_blank">
+          0124151709
+        </a>
+
+      </div>
+
+    </div>
 
   </div>
 
-
-  <div class="quick-card">
-
-    <div class="icon">🤝</div>
-
-    <h3>خدمة المجتمع</h3>
-
-    <p>عمل إنساني وطوعي</p>
-
-  </div>
-
-</div>
-
-</div>
-
 </section>
-
-
-<!-- ABOUT -->
-
-<section class="about" id="about">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>من نحن</h2>
-
-<p>منظمة إنسانية وطوعية لخدمة المجتمع</p>
-
-</div>
-
-
-<div class="about-layout">
-
-<div class="about-logo">
-
-<img src="IMG-20260919-WA0004.jpg"
-     alt="شعار المنظمة">
-
-</div>
-
-
-<div class="about-text">
-
-<h3>منظمة الصحة السودانية لحماية البيئة</h3>
-
-<p>
-منظمة إنسانية وطوعية تهدف إلى المساهمة في إصحاح البيئة
-وتعزيز الصحة العامة وخدمة المجتمع.
-</p>
-
-<p>
-نعمل على دعم المبادرات والأنشطة المجتمعية التي تساهم
-في بناء بيئة صحية وآمنة.
-</p>
-
-<div class="mission-box">
-
-<strong>رسالتنا:</strong>
-
-العمل من أجل مجتمع أكثر صحة وبيئة أكثر نظافة وأماناً.
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- SERVICES -->
-
-<section class="services" id="services">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>خدماتنا</h2>
-
-<p>
-مجالات العمل التي نهتم بها لخدمة المجتمع
-</p>
-
-</div>
-
-
-<div class="services-grid">
-
-<div class="service">
-
-<div class="service-icon">🌿</div>
-
-<h3>إصحاح البيئة</h3>
-
-<p>
-المساهمة في تحسين نظافة البيئة والظروف البيئية.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<div class="service-icon">🏥</div>
-
-<h3>الصحة العامة</h3>
-
-<p>
-دعم الوعي الصحي والمبادرات الصحية.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<div class="service-icon">🤝</div>
-
-<h3>العمل الطوعي</h3>
-
-<p>
-تشجيع المشاركة والعمل التطوعي.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<div class="service-icon">💧</div>
-
-<h3>التوعية البيئية</h3>
-
-<p>
-نشر الوعي بأهمية البيئة النظيفة.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<div class="service-icon">👨‍👩‍👧‍👦</div>
-
-<h3>خدمة المجتمع</h3>
-
-<p>
-دعم المبادرات المجتمعية.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<div class="service-icon">❤️</div>
-
-<h3>المبادرات الإنسانية</h3>
-
-<p>
-المشاركة في الأعمال الإنسانية والطوعية.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- MISSION -->
-
-<section class="big-mission">
-
-<div class="container">
-
-<h2>معاً نصنع فرقاً ❤️</h2>
-
-<p>
-الصحة والبيئة مسؤولية مشتركة، ومشاركة كل فرد
-يمكن أن تساهم في بناء مجتمع أفضل.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- REGISTER -->
-
-<section class="register" id="register">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>سجل معنا</h2>
-
-<p>
-إذا كنت ترغب في المشاركة أو الانضمام إلى أنشطة المنظمة،
-أرسل بياناتك من خلال النموذج.
-</p>
-
-</div>
-
-
-<div class="form">
-
-<form id="registrationForm">
-
-<div class="field">
-
-<label>الاسم الكامل</label>
-
-<input type="text"
-       id="name"
-       placeholder="اكتب اسمك الكامل"
-       required>
-
-</div>
-
-
-<div class="field">
-
-<label>رقم الهاتف</label>
-
-<input type="tel"
-       id="phone"
-       placeholder="اكتب رقم الهاتف"
-       required>
-
-</div>
-
-
-<div class="field">
-
-<label>المدينة</label>
-
-<input type="text"
-       id="city"
-       placeholder="مثال: ربك">
-
-</div>
-
-
-<div class="field">
-
-<label>نوع المشاركة</label>
-
-<select id="type">
-
-<option>متطوع</option>
-
-<option>عضو</option>
-
-<option>داعم</option>
-
-<option>أخرى</option>
-
-</select>
-
-</div>
-
-
-<div class="field">
-
-<label>رسالتك</label>
-
-<textarea id="userMessage"
-          placeholder="اكتب رسالتك هنا..."></textarea>
-
-</div>
-
-
-<button class="submit" type="submit">
-
-إرسال طلب التسجيل
-
-</button>
-
-<div id="message"></div>
-
-</form>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>تواصل معنا</h2>
-
-<p>
-يمكنك التواصل معنا مباشرة عبر WhatsApp
-</p>
-
-</div>
-
-
-<div class="contact-list">
-
-
-<div class="contact-item">
-
-<div class="icon">📱</div>
-
-<h3>0919627356</h3>
-
-<p>WhatsApp</p>
-
-<a class="whatsapp"
-   href="https://wa.me/249919627356"
-   target="_blank">
-
-فتح WhatsApp
-
-</a>
-
-</div>
-
-
-<div class="contact-item">
-
-<div class="icon">📱</div>
-
-<h3>0912776467</h3>
-
-<p>WhatsApp</p>
-
-<a class="whatsapp"
-   href="https://wa.me/249912776467"
-   target="_blank">
-
-فتح WhatsApp
-
-</a>
-
-</div>
-
-
-<div class="contact-item">
-
-<div class="icon">📱</div>
-
-<h3>0124151709</h3>
-
-<p>WhatsApp</p>
-
-<a class="whatsapp"
-   href="https://wa.me/249124151709"
-   target="_blank">
-
-فتح WhatsApp
-
-</a>
-
-</div>
-
-
-<div class="contact-item">
-
-<div class="icon">📍</div>
-
-<h3>العنوان</h3>
-
-<p>
-ربك، مربع 16<br>
-جوار مستوصف ابن نفيس
-</p>
-
-</div>
-
-
-<div class="contact-item">
-
-<div class="icon">🕐</div>
-
-<h3>ساعات العمل</h3>
-
-<p>
-8:00 صباحاً<br>
-إلى 3:00 مساءً
-</p>
-
-</div>
-
-
-<div class="contact-item">
-
-<div class="icon">🇸🇩</div>
-
-<h3>السودان</h3>
-
-<p>
-العمل الإنساني والطوعي
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FOOTER -->
 
 <footer>
 
-<img class="footer-logo"
-     src="IMG-20260919-WA0004.jpg"
-     alt="شعار المنظمة">
+  <p>
+    © 2026 منظمة الصحة السودانية لحماية البيئة
+  </p>
 
-<h3>
-منظمة الصحة السودانية لحماية البيئة
-</h3>
-
-<p>
-Sudanese Organization for Environmental Health Protection
-</p>
-
-<p>
-📍 ربك، مربع 16، جوار مستوصف ابن نفيس
-</p>
-
-<p>
-📱 0919627356
-</p>
-
-<p>
-📱 0912776467
-</p>
-
-<p>
-📱 0124151709
-</p>
-
-
-<div class="footer-bottom">
-
-© 2026 منظمة الصحة السودانية لحماية البيئة
-<br>
-جميع الحقوق محفوظة
-
-</div>
+  <p>
+    Sudanese Organization for Environmental Health Protection
+  </p>
 
 </footer>
 
-
-<!-- TOP BUTTON -->
-
-<button class="top"
-        id="topButton"
-        onclick="window.scrollTo({top:0})">
-
-↑
-
+<button class="top" id="topBtn" onclick="window.scrollTo(0,0)">
+  ↑
 </button>
-
 
 <script>
 
-/* MENU */
+/* رابط Google Apps Script */
+const GOOGLE_SCRIPT_URL =
+"https://script.google.com/macros/s/AKfycbyq1B36CcQflXqZcsVbAXcRvFk9ROzjQkPUbLMleBTI7c_ZJ1RLtbb7kltJn13tZzgp/exec";
 
+
+/* فتح وإغلاق قائمة الجوال */
 function toggleMenu(){
 
   document
-  .getElementById("navMenu")
-  .classList.toggle("show");
+    .getElementById("menu")
+    .classList.toggle("show");
 
 }
 
 
-function closeMenu(){
-
-  document
-  .getElementById("navMenu")
-  .classList.remove("show");
-
-}
-
-
-/* FORM */
-
+/* إرسال طلب التسجيل إلى Google Sheets */
 document
 .getElementById("registrationForm")
-.addEventListener("submit",function(e){
+.addEventListener("submit", async function(e){
 
   e.preventDefault();
 
-  const registration = {
+  const submitButton =
+    document.querySelector(".submit-btn");
+
+  const successMessage =
+    document.getElementById("successMessage");
+
+  const data = {
 
     name:
-    document.getElementById("name").value,
+      document.getElementById("name").value.trim(),
 
     phone:
-    document.getElementById("phone").value,
+      document.getElementById("phone").value.trim(),
 
     city:
-    document.getElementById("city").value,
+      document.getElementById("city").value.trim(),
 
     type:
-    document.getElementById("type").value,
+      document.getElementById("type").value,
 
     message:
-    document.getElementById("userMessage").value,
-
-    date:
-    new Date().toLocaleString()
+      document.getElementById("message").value.trim()
 
   };
 
 
-  let data =
-  JSON.parse(
-    localStorage.getItem("organizationRegistrations")
-  ) || [];
+  submitButton.disabled = true;
+
+  submitButton.innerText =
+    "جاري إرسال الطلب...";
 
 
-  data.push(registration);
+  try{
+
+    await fetch(
+      GOOGLE_SCRIPT_URL,
+      {
+        method:"POST",
+
+        mode:"no-cors",
+
+        headers:{
+          "Content-Type":"text/plain;charset=utf-8"
+        },
+
+        body:JSON.stringify(data)
+      }
+    );
 
 
-  localStorage.setItem(
-    "organizationRegistrations",
-    JSON.stringify(data)
-  );
+    successMessage.style.display =
+      "block";
+
+    this.reset();
+
+    submitButton.innerText =
+      "تم الإرسال ✅";
 
 
-  document.getElementById("message").innerText =
-  "✅ تم إرسال طلب التسجيل بنجاح ❤️";
+    setTimeout(function(){
+
+      submitButton.disabled =
+        false;
+
+      submitButton.innerText =
+        "إرسال طلب التسجيل";
+
+    },3000);
 
 
-  document.getElementById("registrationForm").reset();
+  }catch(error){
 
-});
+    alert(
+      "حدث خطأ أثناء إرسال الطلب. يرجى المحاولة مرة أخرى."
+    );
 
+    submitButton.disabled =
+      false;
 
-/* TOP BUTTON */
-
-window.addEventListener("scroll",function(){
-
-  const button =
-  document.getElementById("topButton");
-
-  if(window.scrollY > 400){
-
-    button.style.display="block";
-
-  }else{
-
-    button.style.display="none";
+    submitButton.innerText =
+      "إرسال طلب التسجيل";
 
   }
 
 });
 
 
-/* ARABIC */
+/* زر الرجوع للأعلى */
+window.addEventListener("scroll",function(){
 
-function arabic(){
+  const topBtn =
+    document.getElementById("topBtn");
 
-  document.body.classList.remove("english");
+  if(window.scrollY > 400){
 
-  document.documentElement.lang="ar";
+    topBtn.style.display =
+      "block";
 
-  document.documentElement.dir="rtl";
+  }else{
 
-  document.getElementById("heroTitle").innerText =
-  "معاً من أجل صحة وبيئة أفضل";
+    topBtn.style.display =
+      "none";
 
-  document.getElementById("heroText").innerText =
-  "منظمة إنسانية وطوعية تعمل من أجل إصحاح البيئة والصحة العامة وخدمة المجتمع.";
+  }
 
-  document.getElementById("joinButton").innerText =
-  "🤝 سجل معنا";
-
-}
+});
 
 
-/* ENGLISH */
+/* عربي / إنجليزي */
+let english = false;
 
-function english(){
+function changeLanguage(){
 
-  document.body.classList.add("english");
+  english = !english;
 
-  document.documentElement.lang="en";
+  const title =
+    document.getElementById("heroTitle");
 
-  document.documentElement.dir="ltr";
+  const text =
+    document.getElementById("heroText");
 
-  document.getElementById("heroTitle").innerText =
-  "Together for Better Health and a Better Environment";
+  const button =
+    document.getElementById("heroBtn");
 
-  document.getElementById("heroText").innerText =
-  "A humanitarian and voluntary organization working to improve environmental sanitation, public health and serve the community.";
+  if(english){
 
-  document.getElementById("joinButton").innerText =
-  "🤝 Join Us";
+    document.documentElement.lang =
+      "en";
+
+    document.documentElement.dir =
+      "ltr";
+
+    title.innerText =
+      "Sudanese Organization for Environmental Health Protection";
+
+    text.innerText =
+      "A humanitarian and voluntary organization working to improve environmental sanitation, public health and community services.";
+
+    button.innerText =
+      "Register With Us";
+
+  }else{
+
+    document.documentElement.lang =
+      "ar";
+
+    document.documentElement.dir =
+      "rtl";
+
+    title.innerText =
+      "منظمة الصحة السودانية لحماية البيئة";
+
+    text.innerText =
+      "منظمة إنسانية وطوعية تعمل من أجل إصحاح البيئة وتعزيز الصحة العامة وخدمة المجتمع.";
+
+    button.innerText =
+      "سجل معنا";
+
+  }
 
 }
 
 </script>
 
 </body>
-</html>
+  </html>
