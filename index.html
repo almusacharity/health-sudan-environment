@@ -84,8 +84,6 @@ header{
   white-space:nowrap;
 }
 
-/* Menu button */
-
 .menu-btn{
   border:0;
   background:#08783d;
@@ -96,8 +94,6 @@ header{
   font-size:23px;
   cursor:pointer;
 }
-
-/* Navigation */
 
 .nav-menu{
   display:none;
@@ -426,6 +422,11 @@ section{
   cursor:pointer;
 }
 
+.submit:disabled{
+  opacity:.6;
+  cursor:not-allowed;
+}
+
 #message{
   text-align:center;
   margin-top:12px;
@@ -650,7 +651,7 @@ body.english .hero .english{
 
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
@@ -702,7 +703,7 @@ body.english .hero .english{
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
@@ -742,7 +743,7 @@ body.english .hero .english{
 </section>
 
 
-<!-- QUICK -->
+<!-- ================= QUICK ================= -->
 
 <section class="quick">
 
@@ -789,7 +790,7 @@ body.english .hero .english{
 </section>
 
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 
 <section class="about" id="about">
 
@@ -845,7 +846,7 @@ body.english .hero .english{
 </section>
 
 
-<!-- SERVICES -->
+<!-- ================= SERVICES ================= -->
 
 <section class="services" id="services">
 
@@ -948,7 +949,7 @@ body.english .hero .english{
 </section>
 
 
-<!-- MISSION -->
+<!-- ================= MISSION ================= -->
 
 <section class="big-mission">
 
@@ -966,7 +967,7 @@ body.english .hero .english{
 </section>
 
 
-<!-- REGISTER -->
+<!-- ================= REGISTER ================= -->
 
 <section class="register" id="register">
 
@@ -986,79 +987,144 @@ body.english .hero .english{
 
 <div class="form">
 
-<form id="registrationForm">
+<!--
+  FORM SUBMIT
+  التسجيل سيصل مباشرة إلى البريد الإلكتروني.
+-->
 
-<div class="field">
+<form
+  id="registrationForm"
+  action="https://formsubmit.co/Hima199th@gmail.com"
+  method="POST">
 
-<label>الاسم الكامل</label>
+  <!-- عنوان الرسالة في البريد -->
+  <input
+    type="hidden"
+    name="_subject"
+    value="طلب تسجيل جديد - منظمة الصحة السودانية لحماية البيئة">
 
-<input type="text"
-       id="name"
-       placeholder="اكتب اسمك الكامل"
-       required>
+  <!-- إرسال نسخة إلى البريد الثاني -->
+  <input
+    type="hidden"
+    name="_cc"
+    value="belal62100056@gmail.com">
 
-</div>
+  <!-- قالب الرسالة -->
+  <input
+    type="hidden"
+    name="_template"
+    value="table">
 
+  <!-- عنوان الموقع -->
+  <input
+    type="hidden"
+    name="_url"
+    value="https://almusacharity.github.io/health-sudan-environment/">
 
-<div class="field">
+  <!-- حماية إضافية من السبام -->
+  <input
+    type="text"
+    name="_honey"
+    style="display:none">
 
-<label>رقم الهاتف</label>
+  <div class="field">
 
-<input type="tel"
-       id="phone"
-       placeholder="اكتب رقم الهاتف"
-       required>
+    <label>الاسم الكامل</label>
 
-</div>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="اكتب اسمك الكامل"
+      required>
 
-
-<div class="field">
-
-<label>المدينة</label>
-
-<input type="text"
-       id="city"
-       placeholder="مثال: ربك">
-
-</div>
-
-
-<div class="field">
-
-<label>نوع المشاركة</label>
-
-<select id="type">
-
-<option>متطوع</option>
-
-<option>عضو</option>
-
-<option>داعم</option>
-
-<option>أخرى</option>
-
-</select>
-
-</div>
+  </div>
 
 
-<div class="field">
+  <div class="field">
 
-<label>رسالتك</label>
+    <label>رقم الهاتف</label>
 
-<textarea id="userMessage"
-          placeholder="اكتب رسالتك هنا..."></textarea>
+    <input
+      type="tel"
+      name="phone"
+      id="phone"
+      placeholder="اكتب رقم الهاتف"
+      required>
 
-</div>
+  </div>
 
 
-<button class="submit" type="submit">
+  <div class="field">
 
-إرسال طلب التسجيل
+    <label>البريد الإلكتروني</label>
 
-</button>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="example@gmail.com"
+      required>
 
-<div id="message"></div>
+  </div>
+
+
+  <div class="field">
+
+    <label>المدينة</label>
+
+    <input
+      type="text"
+      name="city"
+      id="city"
+      placeholder="مثال: ربك">
+
+  </div>
+
+
+  <div class="field">
+
+    <label>نوع المشاركة</label>
+
+    <select
+      name="type"
+      id="type">
+
+      <option value="متطوع">متطوع</option>
+
+      <option value="عضو">عضو</option>
+
+      <option value="داعم">داعم</option>
+
+      <option value="أخرى">أخرى</option>
+
+    </select>
+
+  </div>
+
+
+  <div class="field">
+
+    <label>رسالتك</label>
+
+    <textarea
+      name="message"
+      id="userMessage"
+      placeholder="اكتب رسالتك هنا..."></textarea>
+
+  </div>
+
+
+  <button
+    class="submit"
+    type="submit"
+    id="submitButton">
+
+    إرسال طلب التسجيل
+
+  </button>
+
+  <div id="message"></div>
 
 </form>
 
@@ -1069,7 +1135,7 @@ body.english .hero .english{
 </section>
 
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 
 <section class="contact" id="contact">
 
@@ -1194,7 +1260,7 @@ body.english .hero .english{
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
@@ -1238,7 +1304,7 @@ Sudanese Organization for Environmental Health Protection
 </footer>
 
 
-<!-- TOP BUTTON -->
+<!-- ================= TOP BUTTON ================= -->
 
 <button class="top"
         id="topButton"
@@ -1251,7 +1317,7 @@ Sudanese Organization for Environmental Health Protection
 
 <script>
 
-/* MENU */
+/* ================= MENU ================= */
 
 function toggleMenu(){
 
@@ -1271,62 +1337,34 @@ function closeMenu(){
 }
 
 
-/* FORM */
+/* ================= FORM ================= */
 
 document
 .getElementById("registrationForm")
 .addEventListener("submit",function(e){
 
-  e.preventDefault();
+  /*
+    لا نستخدم localStorage ولا Google Sheets.
+    النموذج الآن يرسل مباشرة إلى البريد.
+  */
 
-  const registration = {
+  const button =
+    document.getElementById("submitButton");
 
-    name:
-    document.getElementById("name").value,
+  const message =
+    document.getElementById("message");
 
-    phone:
-    document.getElementById("phone").value,
+  button.disabled = true;
 
-    city:
-    document.getElementById("city").value,
+  button.innerText =
+    "جاري إرسال الطلب...";
 
-    type:
-    document.getElementById("type").value,
-
-    message:
-    document.getElementById("userMessage").value,
-
-    date:
-    new Date().toLocaleString()
-
-  };
-
-
-  let data =
-  JSON.parse(
-    localStorage.getItem("organizationRegistrations")
-  ) || [];
-
-
-  data.push(registration);
-
-
-  localStorage.setItem(
-    "organizationRegistrations",
-    JSON.stringify(data)
-  );
-
-
-  document.getElementById("message").innerText =
-  "✅ تم إرسال طلب التسجيل بنجاح ❤️";
-
-
-  document.getElementById("registrationForm").reset();
+  message.innerText = "";
 
 });
 
 
-/* TOP BUTTON */
+/* ================= TOP BUTTON ================= */
 
 window.addEventListener("scroll",function(){
 
@@ -1346,7 +1384,7 @@ window.addEventListener("scroll",function(){
 });
 
 
-/* ARABIC */
+/* ================= ARABIC ================= */
 
 function arabic(){
 
@@ -1368,7 +1406,7 @@ function arabic(){
 }
 
 
-/* ENGLISH */
+/* ================= ENGLISH ================= */
 
 function english(){
 
