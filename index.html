@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
 <meta name="google-site-verification" content="o66Z9QAAkSrdq75X7FdTgf_sJrkCwGCh5xk72bURyXU">
 
 <meta charset="UTF-8">
@@ -39,7 +41,7 @@ a{
   padding:0 18px;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 
 header{
   position:sticky;
@@ -146,7 +148,7 @@ header{
   color:#08783d;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 
 .hero{
   background:
@@ -219,7 +221,7 @@ header{
   color:white;
 }
 
-/* QUICK */
+/* ================= QUICK ================= */
 
 .quick{
   padding:20px 18px;
@@ -257,7 +259,7 @@ header{
   color:#777;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 
 section{
   padding:55px 0;
@@ -279,7 +281,7 @@ section{
   font-size:14px;
 }
 
-/* ABOUT */
+/* ================= ABOUT ================= */
 
 .about{
   background:white;
@@ -317,7 +319,7 @@ section{
   font-size:14px;
 }
 
-/* SERVICES */
+/* ================= SERVICES ================= */
 
 .services{
   background:#f4f9f6;
@@ -353,7 +355,7 @@ section{
   font-size:12px;
 }
 
-/* MISSION */
+/* ================= MISSION ================= */
 
 .big-mission{
   background:linear-gradient(145deg,#08783d,#064f2b);
@@ -370,7 +372,7 @@ section{
   font-size:15px;
 }
 
-/* REGISTER */
+/* ================= REGISTER ================= */
 
 .register{
   background:white;
@@ -438,7 +440,7 @@ section{
   font-size:14px;
 }
 
-/* CONTACT */
+/* ================= CONTACT ================= */
 
 .contact{
   background:#f4f9f6;
@@ -484,7 +486,7 @@ section{
   font-weight:bold;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer{
   background:#063a20;
@@ -522,7 +524,7 @@ footer p{
   color:#a9c8b6;
 }
 
-/* TOP BUTTON */
+/* ================= TOP BUTTON ================= */
 
 .top{
   position:fixed;
@@ -541,7 +543,7 @@ footer p{
   z-index:999;
 }
 
-/* DESKTOP */
+/* ================= DESKTOP ================= */
 
 @media(min-width:800px){
 
@@ -635,7 +637,7 @@ footer p{
 
 }
 
-/* ENGLISH */
+/* ================= ENGLISH ================= */
 
 body.english{
   direction:ltr;
@@ -651,9 +653,13 @@ body.english .hero .english{
 }
 
 </style>
+
 </head>
 
 <body>
+
+
+<!-- ================= HEADER ================= -->
 
 <header>
 
@@ -676,24 +682,69 @@ body.english .hero .english{
 
   </div>
 
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-  <nav class="nav-menu" id="navMenu">
+  <button class="menu-btn"
+          onclick="toggleMenu()">
 
-    <a href="#home" onclick="closeMenu()">الرئيسية</a>
+    ☰
 
-    <a href="#about" onclick="closeMenu()">من نحن</a>
+  </button>
 
-    <a href="#services" onclick="closeMenu()">خدماتنا</a>
 
-    <a href="#register" onclick="closeMenu()">التسجيل</a>
+  <nav class="nav-menu"
+       id="navMenu">
 
-    <a href="#contact" onclick="closeMenu()">اتصل بنا</a>
+    <a href="#home"
+       onclick="closeMenu()">
+
+      الرئيسية
+
+    </a>
+
+    <a href="#about"
+       onclick="closeMenu()">
+
+      من نحن
+
+    </a>
+
+    <a href="#services"
+       onclick="closeMenu()">
+
+      خدماتنا
+
+    </a>
+
+    <a href="#register"
+       onclick="closeMenu()">
+
+      التسجيل
+
+    </a>
+
+    <a href="#contact"
+       onclick="closeMenu()">
+
+      اتصل بنا
+
+    </a>
+
 
     <div class="language">
 
-      <button class="ar-btn" onclick="arabic()">عربي</button>
-      <button class="en-btn" onclick="english()">English</button>
+      <button class="ar-btn"
+              onclick="arabic()">
+
+        عربي
+
+      </button>
+
+      <button class="en-btn"
+              onclick="english()">
+
+        English
+
+      </button>
 
     </div>
 
@@ -704,43 +755,63 @@ body.english .hero .english{
 </header>
 
 
-<section class="hero" id="home">
+<!-- ================= HERO ================= -->
+
+<section class="hero"
+         id="home">
 
   <img class="hero-logo"
        src="IMG-20260919-WA0004.jpg"
        alt="شعار المنظمة">
 
+
   <h2 id="heroTitle">
+
     معاً من أجل صحة وبيئة أفضل
+
   </h2>
 
+
   <div class="english">
+
     Sudanese Organization for Environmental Health Protection
+
   </div>
 
+
   <p id="heroText">
+
     منظمة إنسانية وطوعية تعمل من أجل إصحاح البيئة
     والصحة العامة وخدمة المجتمع.
+
   </p>
+
 
   <div class="hero-buttons">
 
     <a href="#register"
        class="btn btn-white"
        id="joinButton">
+
       🤝 سجل معنا
+
     </a>
+
 
     <a href="https://wa.me/249919627356"
        target="_blank"
        class="btn btn-whatsapp">
+
       📱 WhatsApp
+
     </a>
 
   </div>
 
 </section>
 
+
+<!-- ================= QUICK ================= -->
 
 <section class="quick">
 
@@ -748,23 +819,39 @@ body.english .hero .english{
 
 <div class="quick-grid">
 
+
   <div class="quick-card">
+
     <div class="icon">🌿</div>
+
     <h3>إصحاح البيئة</h3>
+
     <p>بيئة نظيفة وصحية</p>
+
   </div>
 
+
   <div class="quick-card">
+
     <div class="icon">🏥</div>
+
     <h3>الصحة العامة</h3>
+
     <p>وعي صحي للمجتمع</p>
+
   </div>
 
+
   <div class="quick-card">
+
     <div class="icon">🤝</div>
+
     <h3>خدمة المجتمع</h3>
+
     <p>عمل إنساني وطوعي</p>
+
   </div>
+
 
 </div>
 
@@ -773,19 +860,27 @@ body.english .hero .english{
 </section>
 
 
-<section class="about" id="about">
+<!-- ================= ABOUT ================= -->
+
+<section class="about"
+         id="about">
 
 <div class="container">
+
 
 <div class="section-title">
 
 <h2>من نحن</h2>
 
-<p>منظمة إنسانية وطوعية لخدمة المجتمع</p>
+<p>
+منظمة إنسانية وطوعية لخدمة المجتمع
+</p>
 
 </div>
 
+
 <div class="about-layout">
+
 
 <div class="about-logo">
 
@@ -794,27 +889,40 @@ body.english .hero .english{
 
 </div>
 
+
 <div class="about-text">
 
-<h3>منظمة الصحة السودانية لحماية البيئة</h3>
+<h3>
+منظمة الصحة السودانية لحماية البيئة
+</h3>
+
 
 <p>
-منظمة إنسانية وطوعية تهدف إلى المساهمة في إصحاح البيئة
-وتعزيز الصحة العامة وخدمة المجتمع.
+
+منظمة إنسانية وطوعية تهدف إلى المساهمة
+في إصحاح البيئة وتعزيز الصحة العامة
+وخدمة المجتمع.
+
 </p>
 
+
 <p>
-نعمل على دعم المبادرات والأنشطة المجتمعية التي تساهم
-في بناء بيئة صحية وآمنة.
+
+نعمل على دعم المبادرات والأنشطة المجتمعية
+التي تساهم في بناء بيئة صحية وآمنة.
+
 </p>
+
 
 <div class="mission-box">
 
 <strong>رسالتنا:</strong>
 
-العمل من أجل مجتمع أكثر صحة وبيئة أكثر نظافة وأماناً.
+العمل من أجل مجتمع أكثر صحة
+وبيئة أكثر نظافة وأماناً.
 
 </div>
+
 
 </div>
 
@@ -825,9 +933,13 @@ body.english .hero .english{
 </section>
 
 
-<section class="services" id="services">
+<!-- ================= SERVICES ================= -->
+
+<section class="services"
+         id="services">
 
 <div class="container">
+
 
 <div class="section-title">
 
@@ -839,43 +951,112 @@ body.english .hero .english{
 
 </div>
 
+
 <div class="services-grid">
 
-<div class="service">
-<div class="service-icon">🌿</div>
-<h3>إصحاح البيئة</h3>
-<p>المساهمة في تحسين نظافة البيئة والظروف البيئية.</p>
-</div>
 
 <div class="service">
-<div class="service-icon">🏥</div>
-<h3>الصحة العامة</h3>
-<p>دعم الوعي الصحي والمبادرات الصحية.</p>
+
+<div class="service-icon">
+🌿
 </div>
 
-<div class="service">
-<div class="service-icon">🤝</div>
-<h3>العمل الطوعي</h3>
-<p>تشجيع المشاركة والعمل التطوعي.</p>
+<h3>
+إصحاح البيئة
+</h3>
+
+<p>
+المساهمة في تحسين نظافة البيئة
+والظروف البيئية.
+</p>
+
 </div>
 
-<div class="service">
-<div class="service-icon">💧</div>
-<h3>التوعية البيئية</h3>
-<p>نشر الوعي بأهمية البيئة النظيفة.</p>
-</div>
 
 <div class="service">
-<div class="service-icon">👨‍👩‍👧‍👦</div>
-<h3>خدمة المجتمع</h3>
-<p>دعم المبادرات المجتمعية.</p>
+
+<div class="service-icon">
+🏥
 </div>
 
-<div class="service">
-<div class="service-icon">❤️</div>
-<h3>المبادرات الإنسانية</h3>
-<p>المشاركة في الأعمال الإنسانية والطوعية.</p>
+<h3>
+الصحة العامة
+</h3>
+
+<p>
+دعم الوعي الصحي والمبادرات الصحية.
+</p>
+
 </div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🤝
+</div>
+
+<h3>
+العمل الطوعي
+</h3>
+
+<p>
+تشجيع المشاركة والعمل التطوعي.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+💧
+</div>
+
+<h3>
+التوعية البيئية
+</h3>
+
+<p>
+نشر الوعي بأهمية البيئة النظيفة.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+👨‍👩‍👧‍👦
+</div>
+
+<h3>
+خدمة المجتمع
+</h3>
+
+<p>
+دعم المبادرات المجتمعية.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+❤️
+</div>
+
+<h3>
+المبادرات الإنسانية
+</h3>
+
+<p>
+المشاركة في الأعمال الإنسانية والطوعية.
+</p>
+
+</div>
+
 
 </div>
 
@@ -883,16 +1064,21 @@ body.english .hero .english{
 
 </section>
 
+
+<!-- ================= MISSION ================= -->
 
 <section class="big-mission">
 
 <div class="container">
 
-<h2>معاً نصنع فرقاً ❤️</h2>
+<h2>
+معاً نصنع فرقاً ❤️
+</h2>
 
 <p>
-الصحة والبيئة مسؤولية مشتركة، ومشاركة كل فرد
-يمكن أن تساهم في بناء مجتمع أفضل.
+الصحة والبيئة مسؤولية مشتركة،
+ومشاركة كل فرد يمكن أن تساهم
+في بناء مجتمع أفضل.
 </p>
 
 </div>
@@ -900,151 +1086,199 @@ body.english .hero .english{
 </section>
 
 
-<section class="register" id="register">
+<!-- ================= REGISTER ================= -->
+
+<section class="register"
+         id="register">
 
 <div class="container">
 
+
 <div class="section-title">
 
-<h2>سجل معنا</h2>
+<h2>
+سجل معنا
+</h2>
 
 <p>
-إذا كنت ترغب في المشاركة أو الانضمام إلى أنشطة المنظمة،
-أرسل بياناتك من خلال النموذج.
+إذا كنت ترغب في المشاركة أو الانضمام
+إلى أنشطة المنظمة، أرسل بياناتك
+من خلال النموذج.
 </p>
 
 </div>
 
+
 <div class="form">
 
-<form
-  id="registrationForm"
-  action="https://formsubmit.co/Hima199th@gmail.com"
-  method="POST">
 
-  <input
-    type="hidden"
-    name="_subject"
-    value="طلب تسجيل جديد - منظمة الصحة السودانية لحماية البيئة">
-
-  <input
-    type="hidden"
-    name="_cc"
-    value="belal62100056@gmail.com">
-
-  <input
-    type="hidden"
-    name="_template"
-    value="table">
-
-  <!-- الرجوع للموقع بعد إرسال الطلب -->
-  <input
-    type="hidden"
-    name="_next"
-    value="https://almusacharity.github.io/health-sudan-environment/">
-
-  <!-- حماية من الرسائل المزعجة -->
-  <input
-    type="text"
-    name="_honey"
-    style="display:none">
+<form id="registrationForm">
 
 
-  <div class="field">
+<!-- بيانات FormSubmit -->
 
-    <label>الاسم الكامل</label>
-
-    <input
-      type="text"
-      name="name"
-      id="name"
-      placeholder="اكتب اسمك الكامل"
-      required>
-
-  </div>
+<input
+type="hidden"
+name="_subject"
+value="طلب تسجيل جديد - منظمة الصحة السودانية لحماية البيئة">
 
 
-  <div class="field">
-
-    <label>رقم الهاتف</label>
-
-    <input
-      type="tel"
-      name="phone"
-      id="phone"
-      placeholder="اكتب رقم الهاتف"
-      required>
-
-  </div>
+<input
+type="hidden"
+name="_cc"
+value="belal62100056@gmail.com">
 
 
-  <div class="field">
-
-    <label>البريد الإلكتروني</label>
-
-    <input
-      type="email"
-      name="email"
-      id="email"
-      placeholder="example@gmail.com"
-      required>
-
-  </div>
+<input
+type="hidden"
+name="_template"
+value="table">
 
 
-  <div class="field">
-
-    <label>المدينة</label>
-
-    <input
-      type="text"
-      name="city"
-      id="city"
-      placeholder="مثال: ربك">
-
-  </div>
+<input
+type="hidden"
+name="_captcha"
+value="true">
 
 
-  <div class="field">
-
-    <label>نوع المشاركة</label>
-
-    <select
-      name="type"
-      id="type">
-
-      <option value="متطوع">متطوع</option>
-      <option value="عضو">عضو</option>
-      <option value="داعم">داعم</option>
-      <option value="أخرى">أخرى</option>
-
-    </select>
-
-  </div>
+<input
+type="text"
+name="_honey"
+style="display:none">
 
 
-  <div class="field">
+<!-- الاسم -->
 
-    <label>رسالتك</label>
+<div class="field">
 
-    <textarea
-      name="message"
-      id="userMessage"
-      placeholder="اكتب رسالتك هنا..."></textarea>
+<label>
+الاسم الكامل
+</label>
 
-  </div>
+<input
+type="text"
+name="name"
+id="name"
+placeholder="اكتب اسمك الكامل"
+required>
+
+</div>
 
 
-  <button
-    class="submit"
-    type="submit"
-    id="submitButton">
+<!-- الهاتف -->
 
-    إرسال طلب التسجيل
+<div class="field">
 
-  </button>
+<label>
+رقم الهاتف
+</label>
 
-  <div id="message"></div>
+<input
+type="tel"
+name="phone"
+id="phone"
+placeholder="اكتب رقم الهاتف"
+required>
+
+</div>
+
+
+<!-- البريد -->
+
+<div class="field">
+
+<label>
+البريد الإلكتروني
+</label>
+
+<input
+type="email"
+name="email"
+id="email"
+placeholder="example@gmail.com"
+required>
+
+</div>
+
+
+<!-- المدينة -->
+
+<div class="field">
+
+<label>
+المدينة
+</label>
+
+<input
+type="text"
+name="city"
+id="city"
+placeholder="مثال: ربك">
+
+</div>
+
+
+<!-- نوع المشاركة -->
+
+<div class="field">
+
+<label>
+نوع المشاركة
+</label>
+
+<select
+name="type"
+id="type">
+
+<option value="متطوع">
+متطوع
+</option>
+
+<option value="عضو">
+عضو
+</option>
+
+<option value="داعم">
+داعم
+</option>
+
+<option value="أخرى">
+أخرى
+</option>
+
+</select>
+
+</div>
+
+
+<!-- الرسالة -->
+
+<div class="field">
+
+<label>
+رسالتك
+</label>
+
+<textarea
+name="message"
+id="userMessage"
+placeholder="اكتب رسالتك هنا..."></textarea>
+
+</div>
+
+
+<button
+class="submit"
+type="submit"
+id="submitButton">
+
+إرسال طلب التسجيل
+
+</button>
+
+
+<div id="message"></div>
+
 
 </form>
 
@@ -1055,13 +1289,19 @@ body.english .hero .english{
 </section>
 
 
-<section class="contact" id="contact">
+<!-- ================= CONTACT ================= -->
+
+<section class="contact"
+         id="contact">
 
 <div class="container">
 
+
 <div class="section-title">
 
-<h2>تواصل معنا</h2>
+<h2>
+تواصل معنا
+</h2>
 
 <p>
 يمكنك التواصل معنا مباشرة عبر WhatsApp
@@ -1069,20 +1309,27 @@ body.english .hero .english{
 
 </div>
 
+
 <div class="contact-list">
 
 
 <div class="contact-item">
 
-<div class="icon">📱</div>
+<div class="icon">
+📱
+</div>
 
-<h3>0919627356</h3>
+<h3>
+0919627356
+</h3>
 
-<p>WhatsApp</p>
+<p>
+WhatsApp
+</p>
 
 <a class="whatsapp"
-   href="https://wa.me/249919627356"
-   target="_blank">
+href="https://wa.me/249919627356"
+target="_blank">
 
 فتح WhatsApp
 
@@ -1093,15 +1340,21 @@ body.english .hero .english{
 
 <div class="contact-item">
 
-<div class="icon">📱</div>
+<div class="icon">
+📱
+</div>
 
-<h3>0912776467</h3>
+<h3>
+0912776467
+</h3>
 
-<p>WhatsApp</p>
+<p>
+WhatsApp
+</p>
 
 <a class="whatsapp"
-   href="https://wa.me/249912776467"
-   target="_blank">
+href="https://wa.me/249912776467"
+target="_blank">
 
 فتح WhatsApp
 
@@ -1112,13 +1365,21 @@ body.english .hero .english{
 
 <div class="contact-item">
 
-<div class="icon">📱</div>
+<div class="icon">
+📱
+</div>
 
-<p>WhatsApp</p>
+<h3>
+0124151709
+</h3>
+
+<p>
+WhatsApp
+</p>
 
 <a class="whatsapp"
-   href="https://wa.me/249124151709"
-   target="_blank">
+href="https://wa.me/249124151709"
+target="_blank">
 
 فتح WhatsApp
 
@@ -1129,9 +1390,13 @@ body.english .hero .english{
 
 <div class="contact-item">
 
-<div class="icon">📍</div>
+<div class="icon">
+📍
+</div>
 
-<h3>العنوان</h3>
+<h3>
+العنوان
+</h3>
 
 <p>
 ربك، مربع 16<br>
@@ -1143,9 +1408,13 @@ body.english .hero .english{
 
 <div class="contact-item">
 
-<div class="icon">🕐</div>
+<div class="icon">
+🕐
+</div>
 
-<h3>ساعات العمل</h3>
+<h3>
+ساعات العمل
+</h3>
 
 <p>
 8:00 صباحاً<br>
@@ -1157,15 +1426,20 @@ body.english .hero .english{
 
 <div class="contact-item">
 
-<div class="icon">🇸🇩</div>
+<div class="icon">
+🇸🇩
+</div>
 
-<h3>السودان</h3>
+<h3>
+السودان
+</h3>
 
 <p>
 العمل الإنساني والطوعي
 </p>
 
 </div>
+
 
 </div>
 
@@ -1174,42 +1448,66 @@ body.english .hero .english{
 </section>
 
 
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
+
 <img class="footer-logo"
-     src="IMG-20260919-WA0004.jpg"
-     alt="شعار المنظمة">
+src="IMG-20260919-WA0004.jpg"
+alt="شعار المنظمة">
+
 
 <h3>
 منظمة الصحة السودانية لحماية البيئة
 </h3>
 
+
 <p>
 Sudanese Organization for Environmental Health Protection
 </p>
+
 
 <p>
 📍 ربك، مربع 16، جوار مستوصف ابن نفيس
 </p>
 
-<p>📱 0919627356</p>
-<p>📱 0912776467</p>
-<p>📱 0124151709</p>
+
+<p>
+📱 0919627356
+</p>
+
+
+<p>
+📱 0912776467
+</p>
+
+
+<p>
+📱 0124151709
+</p>
+
 
 <div class="footer-bottom">
 
 © 2026 منظمة الصحة السودانية لحماية البيئة
+
 <br>
+
 جميع الحقوق محفوظة
 
 </div>
 
+
 </footer>
 
 
-<button class="top"
-        id="topButton"
-        onclick="window.scrollTo({top:0})">
+<!-- ================= TOP BUTTON ================= -->
+
+<button
+class="top"
+id="topButton"
+onclick="window.scrollTo({top:0})">
 
 ↑
 
@@ -1218,111 +1516,195 @@ Sudanese Organization for Environmental Health Protection
 
 <script>
 
-/* MENU */
+/* ================= MENU ================= */
 
 function toggleMenu(){
 
-  document
-  .getElementById("navMenu")
-  .classList.toggle("show");
+document
+.getElementById("navMenu")
+.classList.toggle("show");
 
 }
+
 
 function closeMenu(){
 
-  document
-  .getElementById("navMenu")
-  .classList.remove("show");
+document
+.getElementById("navMenu")
+.classList.remove("show");
 
 }
 
 
-/* FORM */
+/* ================= FORM AJAX ================= */
 
 document
 .getElementById("registrationForm")
-.addEventListener("submit",function(){
+.addEventListener("submit", async function(e){
 
-  const button =
-    document.getElementById("submitButton");
+e.preventDefault();
 
-  const message =
-    document.getElementById("message");
 
-  button.disabled = true;
+const form =
+document.getElementById("registrationForm");
 
-  button.innerText =
-    "جاري إرسال الطلب...";
+const button =
+document.getElementById("submitButton");
 
-  message.innerText = "";
+const message =
+document.getElementById("message");
+
+
+button.disabled = true;
+
+button.innerText =
+"جاري إرسال الطلب...";
+
+message.innerText = "";
+
+
+const formData =
+new FormData(form);
+
+
+const data =
+Object.fromEntries(formData.entries());
+
+
+try{
+
+
+const response =
+await fetch(
+"https://formsubmit.co/ajax/Hima199th@gmail.com",
+{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json",
+"Accept":"application/json"
+},
+
+body:JSON.stringify(data)
 
 });
 
 
-/* TOP BUTTON */
-
-window.addEventListener("scroll",function(){
-
-  const button =
-  document.getElementById("topButton");
-
-  if(window.scrollY > 400){
-
-    button.style.display="block";
-
-  }else{
-
-    button.style.display="none";
-
-  }
-
-});
+const result =
+await response.json();
 
 
-/* ARABIC */
+if(result.success){
 
-function arabic(){
+message.innerText =
+"✅ تم إرسال طلب التسجيل بنجاح. شكراً لك.";
 
-  document.body.classList.remove("english");
+message.style.color =
+"#08783d";
 
-  document.documentElement.lang="ar";
+form.reset();
 
-  document.documentElement.dir="rtl";
+}else{
 
-  document.getElementById("heroTitle").innerText =
-  "معاً من أجل صحة وبيئة أفضل";
+message.innerText =
+"❌ حدثت مشكلة أثناء الإرسال. حاول مرة أخرى.";
 
-  document.getElementById("heroText").innerText =
-  "منظمة إنسانية وطوعية تعمل من أجل إصحاح البيئة والصحة العامة وخدمة المجتمع.";
-
-  document.getElementById("joinButton").innerText =
-  "🤝 سجل معنا";
+message.style.color =
+"#c62828";
 
 }
 
 
-/* ENGLISH */
+}catch(error){
+
+message.innerText =
+"❌ تعذر الاتصال بخدمة الإرسال. حاول مرة أخرى.";
+
+message.style.color =
+"#c62828";
+
+}
+
+
+button.disabled = false;
+
+button.innerText =
+"إرسال طلب التسجيل";
+
+});
+
+
+/* ================= TOP BUTTON ================= */
+
+window.addEventListener("scroll",function(){
+
+const button =
+document.getElementById("topButton");
+
+if(window.scrollY > 400){
+
+button.style.display="block";
+
+}else{
+
+button.style.display="none";
+
+}
+
+});
+
+
+/* ================= ARABIC ================= */
+
+function arabic(){
+
+document.body.classList.remove("english");
+
+document.documentElement.lang="ar";
+
+document.documentElement.dir="rtl";
+
+
+document.getElementById("heroTitle").innerText =
+"معاً من أجل صحة وبيئة أفضل";
+
+
+document.getElementById("heroText").innerText =
+"منظمة إنسانية وطوعية تعمل من أجل إصحاح البيئة والصحة العامة وخدمة المجتمع.";
+
+
+document.getElementById("joinButton").innerText =
+"🤝 سجل معنا";
+
+}
+
+
+/* ================= ENGLISH ================= */
 
 function english(){
 
-  document.body.classList.add("english");
+document.body.classList.add("english");
 
-  document.documentElement.lang="en";
+document.documentElement.lang="en";
 
-  document.documentElement.dir="ltr";
+document.documentElement.dir="ltr";
 
-  document.getElementById("heroTitle").innerText =
-  "Together for Better Health and a Better Environment";
 
-  document.getElementById("heroText").innerText =
-  "A humanitarian and voluntary organization working to improve environmental sanitation, public health and serve the community.";
+document.getElementById("heroTitle").innerText =
+"Together for Better Health and a Better Environment";
 
-  document.getElementById("joinButton").innerText =
-  "🤝 Join Us";
+
+document.getElementById("heroText").innerText =
+"A humanitarian and voluntary organization working to improve environmental sanitation, public health and serve the community.";
+
+
+document.getElementById("joinButton").innerText =
+"🤝 Join Us";
 
 }
 
 </script>
 
 </body>
-  </html>
+</html>
