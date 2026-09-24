@@ -16,607 +16,617 @@ content="منظمة الصحة السودانية لحماية البيئة - إ
 <style>
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Tahoma,sans-serif;
-  background:#f4f9f6;
-  color:#183b29;
-  line-height:1.7;
+font-family:Arial,Tahoma,sans-serif;
+background:#f4f9f6;
+color:#183b29;
+line-height:1.7;
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+text-decoration:none;
+color:inherit;
 }
 
 .container{
-  width:100%;
-  max-width:1150px;
-  margin:auto;
-  padding:0 18px;
+width:100%;
+max-width:1150px;
+margin:auto;
+padding:0 18px;
 }
 
 header{
-  position:sticky;
-  top:0;
-  z-index:9999;
-  background:white;
-  box-shadow:0 2px 15px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:9999;
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
 
 .header{
-  min-height:72px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:10px;
+min-height:72px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:10px;
 }
 
 .logo-area{
-  display:flex;
-  align-items:center;
-  gap:9px;
-  min-width:0;
+display:flex;
+align-items:center;
+gap:9px;
+min-width:0;
 }
 
 .logo-area img{
-  width:52px;
-  height:52px;
-  object-fit:contain;
-  border-radius:50%;
+width:52px;
+height:52px;
+object-fit:contain;
+border-radius:50%;
 }
 
 .logo-name{
-  min-width:0;
+min-width:0;
 }
 
 .logo-name h1{
-  font-size:14px;
-  color:#08783d;
-  line-height:1.3;
+font-size:14px;
+color:#08783d;
+line-height:1.3;
 }
 
 .logo-name p{
-  font-size:9px;
-  color:#777;
-  white-space:nowrap;
+font-size:9px;
+color:#777;
+white-space:nowrap;
 }
 
 .menu-btn{
-  border:0;
-  background:#08783d;
-  color:white;
-  width:43px;
-  height:43px;
-  border-radius:10px;
-  font-size:23px;
-  cursor:pointer;
+border:0;
+background:#08783d;
+color:white;
+width:43px;
+height:43px;
+border-radius:10px;
+font-size:23px;
+cursor:pointer;
 }
 
 .nav-menu{
-  display:none;
-  position:absolute;
-  top:72px;
-  right:0;
-  left:0;
-  background:white;
-  padding:15px 18px 20px;
-  box-shadow:0 8px 20px rgba(0,0,0,.10);
+display:none;
+position:absolute;
+top:72px;
+right:0;
+left:0;
+background:white;
+padding:15px 18px 20px;
+box-shadow:0 8px 20px rgba(0,0,0,.10);
 }
 
 .nav-menu.show{
-  display:block;
+display:block;
 }
 
 .nav-menu a{
-  display:block;
-  padding:12px;
-  border-bottom:1px solid #edf2ef;
-  font-weight:bold;
-  color:#174b32;
+display:block;
+padding:12px;
+border-bottom:1px solid #edf2ef;
+font-weight:bold;
+color:#174b32;
 }
 
 .language{
-  display:flex;
-  gap:8px;
-  margin-top:12px;
+display:flex;
+gap:8px;
+margin-top:12px;
 }
 
 .language button{
-  flex:1;
-  padding:10px;
-  border:0;
-  border-radius:8px;
-  cursor:pointer;
-  font-weight:bold;
+flex:1;
+padding:10px;
+border:0;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
 }
 
 .ar-btn{
-  background:#08783d;
-  color:white;
+background:#08783d;
+color:white;
 }
 
 .en-btn{
-  background:#e7f4ec;
-  color:#08783d;
+background:#e7f4ec;
+color:#08783d;
 }
 
 .hero{
-  background:
-  linear-gradient(145deg,rgba(4,91,43,.96),rgba(9,133,67,.90)),
-  url("IMG-20260919-WA0004.jpg");
-  background-size:cover;
-  background-position:center;
-  color:white;
-  text-align:center;
-  padding:48px 18px 65px;
+background:
+linear-gradient(145deg,rgba(4,91,43,.96),rgba(9,133,67,.90)),
+url("IMG-20260919-WA0004.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:48px 18px 65px;
 }
 
 .hero-logo{
-  width:105px;
-  height:105px;
-  object-fit:contain;
-  background:white;
-  border-radius:50%;
-  padding:8px;
-  box-shadow:0 8px 25px rgba(0,0,0,.2);
-  margin-bottom:18px;
+width:105px;
+height:105px;
+object-fit:contain;
+background:white;
+border-radius:50%;
+padding:8px;
+box-shadow:0 8px 25px rgba(0,0,0,.2);
+margin-bottom:18px;
 }
 
 .hero h2{
-  font-size:31px;
-  line-height:1.35;
-  margin-bottom:10px;
+font-size:31px;
+line-height:1.35;
+margin-bottom:10px;
 }
 
 .hero .english{
-  font-size:12px;
-  opacity:.9;
-  direction:ltr;
-  margin-bottom:17px;
+font-size:12px;
+opacity:.9;
+direction:ltr;
+margin-bottom:17px;
 }
 
 .hero p{
-  font-size:16px;
-  max-width:600px;
-  margin:auto auto 25px;
-  opacity:.95;
+font-size:16px;
+max-width:600px;
+margin:auto auto 25px;
+opacity:.95;
 }
 
 .hero-buttons{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  max-width:400px;
-  margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+max-width:400px;
+margin:auto;
 }
 
 .btn{
-  display:block;
-  width:100%;
-  padding:14px;
-  border-radius:11px;
-  font-weight:bold;
-  font-size:16px;
+display:block;
+width:100%;
+padding:14px;
+border-radius:11px;
+font-weight:bold;
+font-size:16px;
 }
 
 .btn-white{
-  background:white;
-  color:#08783d;
+background:white;
+color:#08783d;
 }
 
 .btn-whatsapp{
-  background:#25d366;
-  color:white;
+background:#25d366;
+color:white;
 }
 
 .quick{
-  padding:20px 18px;
-  margin-top:-25px;
-  position:relative;
-  z-index:5;
+padding:20px 18px;
+margin-top:-25px;
+position:relative;
+z-index:5;
 }
 
 .quick-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:8px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:8px;
 }
 
 .quick-card{
-  background:white;
-  text-align:center;
-  padding:17px 7px;
-  border-radius:13px;
-  box-shadow:0 5px 18px rgba(0,0,0,.08);
+background:white;
+text-align:center;
+padding:17px 7px;
+border-radius:13px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
 }
 
 .quick-card .icon{
-  font-size:27px;
+font-size:27px;
 }
 
 .quick-card h3{
-  color:#08783d;
-  font-size:12px;
-  margin-top:3px;
+color:#08783d;
+font-size:12px;
+margin-top:3px;
 }
 
 .quick-card p{
-  font-size:9px;
-  color:#777;
+font-size:9px;
+color:#777;
 }
 
 section{
-  padding:55px 0;
+padding:55px 0;
 }
 
 .section-title{
-  text-align:center;
-  margin-bottom:30px;
+text-align:center;
+margin-bottom:30px;
 }
 
 .section-title h2{
-  color:#08783d;
-  font-size:28px;
-  margin-bottom:7px;
+color:#08783d;
+font-size:28px;
+margin-bottom:7px;
 }
 
 .section-title p{
-  color:#777;
-  font-size:14px;
+color:#777;
+font-size:14px;
 }
 
 .about{
-  background:white;
+background:white;
 }
 
 .about-logo{
-  text-align:center;
-  margin-bottom:25px;
+text-align:center;
+margin-bottom:25px;
 }
 
 .about-logo img{
-  width:180px;
-  height:180px;
-  object-fit:contain;
-  border-radius:20px;
+width:180px;
+height:180px;
+object-fit:contain;
+border-radius:20px;
 }
 
 .about-text h3{
-  color:#08783d;
-  font-size:23px;
-  margin-bottom:12px;
+color:#08783d;
+font-size:23px;
+margin-bottom:12px;
 }
 
 .about-text p{
-  color:#555;
-  font-size:15px;
-  margin-bottom:13px;
+color:#555;
+font-size:15px;
+margin-bottom:13px;
 }
 
 .mission-box{
-  background:#edf8f1;
-  border-right:4px solid #08783d;
-  padding:15px;
-  border-radius:10px;
-  font-size:14px;
+background:#edf8f1;
+border-right:4px solid #08783d;
+padding:15px;
+border-radius:10px;
+font-size:14px;
 }
 
 .services{
-  background:#f4f9f6;
+background:#f4f9f6;
 }
 
 .services-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
 }
 
 .service{
-  background:white;
-  border-radius:15px;
-  padding:20px 13px;
-  text-align:center;
-  box-shadow:0 4px 15px rgba(0,0,0,.05);
+background:white;
+border-radius:15px;
+padding:20px 13px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
 }
 
 .service-icon{
-  font-size:34px;
-  margin-bottom:7px;
+font-size:34px;
+margin-bottom:7px;
 }
 
 .service h3{
-  color:#08783d;
-  font-size:16px;
-  margin-bottom:5px;
+color:#08783d;
+font-size:16px;
+margin-bottom:5px;
 }
 
 .service p{
-  color:#777;
-  font-size:12px;
+color:#777;
+font-size:12px;
 }
 
 .big-mission{
-  background:linear-gradient(145deg,#08783d,#064f2b);
-  color:white;
-  text-align:center;
+background:linear-gradient(145deg,#08783d,#064f2b);
+color:white;
+text-align:center;
 }
 
 .big-mission h2{
-  font-size:29px;
-  margin-bottom:10px;
+font-size:29px;
+margin-bottom:10px;
 }
 
 .big-mission p{
-  font-size:15px;
+font-size:15px;
 }
 
 .register{
-  background:white;
+background:white;
 }
 
 .form{
-  background:#f4f9f6;
-  padding:20px 15px;
-  border-radius:17px;
-  box-shadow:0 5px 20px rgba(0,0,0,.06);
+background:#f4f9f6;
+padding:20px 15px;
+border-radius:17px;
+box-shadow:0 5px 20px rgba(0,0,0,.06);
 }
 
 .field{
-  margin-bottom:15px;
+margin-bottom:15px;
 }
 
 .field label{
-  display:block;
-  font-weight:bold;
-  font-size:13px;
-  margin-bottom:5px;
-  color:#174b32;
+display:block;
+font-weight:bold;
+font-size:13px;
+margin-bottom:5px;
+color:#174b32;
 }
 
 .field input,
 .field select,
 .field textarea{
-  width:100%;
-  padding:13px;
-  border:1px solid #d2dfd7;
-  border-radius:9px;
-  background:white;
-  font-family:inherit;
-  font-size:15px;
-  outline:none;
+width:100%;
+padding:13px;
+border:1px solid #d2dfd7;
+border-radius:9px;
+background:white;
+font-family:inherit;
+font-size:15px;
+outline:none;
 }
 
 .field textarea{
-  min-height:110px;
-  resize:vertical;
+min-height:110px;
+resize:vertical;
 }
 
 .submit{
-  width:100%;
-  border:0;
-  background:#08783d;
-  color:white;
-  padding:14px;
-  border-radius:10px;
-  font-size:16px;
-  font-weight:bold;
-  cursor:pointer;
+width:100%;
+border:0;
+background:#08783d;
+color:white;
+padding:14px;
+border-radius:10px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.submit:disabled{
+opacity:.6;
+cursor:not-allowed;
 }
 
 #message{
-  text-align:center;
-  margin-top:12px;
-  color:#08783d;
-  font-weight:bold;
-  font-size:14px;
+text-align:center;
+margin-top:12px;
+font-weight:bold;
+font-size:14px;
 }
 
 .contact{
-  background:#f4f9f6;
+background:#f4f9f6;
 }
 
 .contact-list{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
+display:flex;
+flex-direction:column;
+gap:12px;
 }
 
 .contact-item{
-  background:white;
-  border-radius:14px;
-  padding:18px;
-  text-align:center;
-  box-shadow:0 4px 15px rgba(0,0,0,.05);
+background:white;
+border-radius:14px;
+padding:18px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
 }
 
 .contact-item .icon{
-  font-size:30px;
+font-size:30px;
 }
 
 .contact-item h3{
-  color:#08783d;
-  font-size:17px;
-  margin:3px 0;
+color:#08783d;
+font-size:17px;
+margin:3px 0;
 }
 
 .contact-item p{
-  color:#666;
-  font-size:14px;
+color:#666;
+font-size:14px;
 }
 
 .whatsapp{
-  display:inline-block;
-  margin-top:8px;
-  background:#25d366;
-  color:white;
-  padding:8px 18px;
-  border-radius:8px;
-  font-size:13px;
-  font-weight:bold;
+display:inline-block;
+margin-top:8px;
+background:#25d366;
+color:white;
+padding:8px 18px;
+border-radius:8px;
+font-size:13px;
+font-weight:bold;
 }
 
 footer{
-  background:#063a20;
-  color:white;
-  text-align:center;
-  padding:40px 18px 20px;
+background:#063a20;
+color:white;
+text-align:center;
+padding:40px 18px 20px;
 }
 
 .footer-logo{
-  width:80px;
-  height:80px;
-  object-fit:contain;
-  background:white;
-  border-radius:50%;
-  padding:6px;
-  margin-bottom:12px;
+width:80px;
+height:80px;
+object-fit:contain;
+background:white;
+border-radius:50%;
+padding:6px;
+margin-bottom:12px;
 }
 
 footer h3{
-  font-size:18px;
-  margin-bottom:8px;
+font-size:18px;
+margin-bottom:8px;
 }
 
 footer p{
-  color:#d4e8db;
-  font-size:13px;
-  margin-bottom:6px;
+color:#d4e8db;
+font-size:13px;
+margin-bottom:6px;
 }
 
 .footer-bottom{
-  border-top:1px solid rgba(255,255,255,.15);
-  margin-top:25px;
-  padding-top:15px;
-  font-size:11px;
-  color:#a9c8b6;
+border-top:1px solid rgba(255,255,255,.15);
+margin-top:25px;
+padding-top:15px;
+font-size:11px;
+color:#a9c8b6;
 }
 
 .top{
-  position:fixed;
-  bottom:18px;
-  left:17px;
-  width:43px;
-  height:43px;
-  border:0;
-  border-radius:50%;
-  background:#08783d;
-  color:white;
-  font-size:20px;
-  cursor:pointer;
-  box-shadow:0 4px 15px rgba(0,0,0,.2);
-  display:none;
-  z-index:999;
+position:fixed;
+bottom:18px;
+left:17px;
+width:43px;
+height:43px;
+border:0;
+border-radius:50%;
+background:#08783d;
+color:white;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 15px rgba(0,0,0,.2);
+display:none;
+z-index:999;
+}
+
+/* نافذة الإرسال المخفية */
+
+#formFrame{
+display:none;
 }
 
 @media(min-width:800px){
 
-  .header{
-    padding:0 25px;
-  }
+.header{
+padding:0 25px;
+}
 
-  .menu-btn{
-    display:none;
-  }
+.menu-btn{
+display:none;
+}
 
-  .nav-menu{
-    position:static;
-    display:flex;
-    align-items:center;
-    gap:5px;
-    padding:0;
-    box-shadow:none;
-    background:none;
-  }
+.nav-menu{
+position:static;
+display:flex;
+align-items:center;
+gap:5px;
+padding:0;
+box-shadow:none;
+background:none;
+}
 
-  .nav-menu a{
-    border:0;
-    padding:8px 10px;
-    font-size:13px;
-  }
+.nav-menu a{
+border:0;
+padding:8px 10px;
+font-size:13px;
+}
 
-  .language{
-    margin:0;
-  }
+.language{
+margin:0;
+}
 
-  .language button{
-    padding:7px 10px;
-  }
+.language button{
+padding:7px 10px;
+}
 
-  .hero{
-    padding:75px 20px 100px;
-  }
+.hero{
+padding:75px 20px 100px;
+}
 
-  .hero h2{
-    font-size:50px;
-  }
+.hero h2{
+font-size:50px;
+}
 
-  .hero-buttons{
-    flex-direction:row;
-    max-width:650px;
-  }
+.hero-buttons{
+flex-direction:row;
+max-width:650px;
+}
 
-  .quick{
-    margin-top:-45px;
-  }
+.quick{
+margin-top:-45px;
+}
 
-  .quick-grid{
-    gap:20px;
-  }
+.quick-grid{
+gap:20px;
+}
 
-  .quick-card{
-    padding:25px;
-  }
+.quick-card{
+padding:25px;
+}
 
-  .quick-card h3{
-    font-size:18px;
-  }
+.quick-card h3{
+font-size:18px;
+}
 
-  .quick-card p{
-    font-size:13px;
-  }
+.quick-card p{
+font-size:13px;
+}
 
-  .about-layout{
-    display:grid;
-    grid-template-columns:350px 1fr;
-    gap:50px;
-    align-items:center;
-  }
+.about-layout{
+display:grid;
+grid-template-columns:350px 1fr;
+gap:50px;
+align-items:center;
+}
 
-  .services-grid{
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-  }
+.services-grid{
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
 
-  .contact-list{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-  }
+.contact-list{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+}
 
-  .form{
-    max-width:800px;
-    margin:auto;
-    padding:35px;
-  }
+.form{
+max-width:800px;
+margin:auto;
+padding:35px;
+}
 
 }
 
 body.english{
-  direction:ltr;
+direction:ltr;
 }
 
 body.english .mission-box{
-  border-right:0;
-  border-left:4px solid #08783d;
+border-right:0;
+border-left:4px solid #08783d;
 }
 
 body.english .hero .english{
-  text-align:center;
+text-align:center;
 }
 
 </style>
@@ -629,113 +639,114 @@ body.english .hero .english{
 
 <div class="container header">
 
-  <div class="logo-area">
+<div class="logo-area">
 
-    <img src="IMG-20260919-WA0004.jpg"
-         alt="شعار المنظمة">
+<img src="IMG-20260919-WA0004.jpg"
+alt="شعار المنظمة">
 
-    <div class="logo-name">
+<div class="logo-name">
 
-      <h1>منظمة الصحة السودانية لحماية البيئة</h1>
+<h1>منظمة الصحة السودانية لحماية البيئة</h1>
 
-      <p>
-        Sudanese Organization for Environmental Health Protection
-      </p>
+<p>
+Sudanese Organization for Environmental Health Protection
+</p>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
-  <button class="menu-btn"
-          onclick="toggleMenu()">
-    ☰
-  </button>
+<button class="menu-btn"
+onclick="toggleMenu()">
+☰
+</button>
 
-  <nav class="nav-menu"
-       id="navMenu">
+<nav class="nav-menu"
+id="navMenu">
 
-    <a href="#home"
-       onclick="closeMenu()">
-      الرئيسية
-    </a>
+<a href="#home"
+onclick="closeMenu()">
+الرئيسية
+</a>
 
-    <a href="#about"
-       onclick="closeMenu()">
-      من نحن
-    </a>
+<a href="#about"
+onclick="closeMenu()">
+من نحن
+</a>
 
-    <a href="#services"
-       onclick="closeMenu()">
-      خدماتنا
-    </a>
+<a href="#services"
+onclick="closeMenu()">
+خدماتنا
+</a>
 
-    <a href="#register"
-       onclick="closeMenu()">
-      التسجيل
-    </a>
+<a href="#register"
+onclick="closeMenu()">
+التسجيل
+</a>
 
-    <a href="#contact"
-       onclick="closeMenu()">
-      اتصل بنا
-    </a>
+<a href="#contact"
+onclick="closeMenu()">
+اتصل بنا
+</a>
 
-    <div class="language">
+<div class="language">
 
-      <button class="ar-btn"
-              onclick="arabic()">
-        عربي
-      </button>
+<button class="ar-btn"
+onclick="arabic()">
+عربي
+</button>
 
-      <button class="en-btn"
-              onclick="english()">
-        English
-      </button>
+<button class="en-btn"
+onclick="english()">
+English
+</button>
 
-    </div>
+</div>
 
-  </nav>
+</nav>
 
 </div>
 
 </header>
 
-<section class="hero"
-         id="home">
 
-  <img class="hero-logo"
-       src="IMG-20260919-WA0004.jpg"
-       alt="شعار المنظمة">
+<section class="hero" id="home">
 
-  <h2 id="heroTitle">
-    معاً من أجل صحة وبيئة أفضل
-  </h2>
+<img class="hero-logo"
+src="IMG-20260919-WA0004.jpg"
+alt="شعار المنظمة">
 
-  <div class="english">
-    Sudanese Organization for Environmental Health Protection
-  </div>
+<h2 id="heroTitle">
+معاً من أجل صحة وبيئة أفضل
+</h2>
 
-  <p id="heroText">
-    منظمة إنسانية وطوعية تعمل من أجل إصحاح البيئة
-    والصحة العامة وخدمة المجتمع.
-  </p>
+<div class="english">
+Sudanese Organization for Environmental Health Protection
+</div>
 
-  <div class="hero-buttons">
+<p id="heroText">
+منظمة إنسانية وطوعية تعمل من أجل إصحاح البيئة
+والصحة العامة وخدمة المجتمع.
+</p>
 
-    <a href="#register"
-       class="btn btn-white"
-       id="joinButton">
-      🤝 سجل معنا
-    </a>
+<div class="hero-buttons">
 
-    <a href="https://wa.me/249919627356"
-       target="_blank"
-       class="btn btn-whatsapp">
-      📱 WhatsApp
-    </a>
+<a href="#register"
+class="btn btn-white"
+id="joinButton">
+🤝 سجل معنا
+</a>
 
-  </div>
+<a href="https://wa.me/249919627356"
+target="_blank"
+class="btn btn-whatsapp">
+📱 WhatsApp
+</a>
+
+</div>
 
 </section>
+
 
 <section class="quick">
 
@@ -743,36 +754,55 @@ body.english .hero .english{
 
 <div class="quick-grid">
 
-  <div class="quick-card">
-    <div class="icon">🌿</div>
-    <h3>إصحاح البيئة</h3>
-    <p>بيئة نظيفة وصحية</p>
-  </div>
+<div class="quick-card">
 
-  <div class="quick-card">
-    <div class="icon">🏥</div>
-    <h3>الصحة العامة</h3>
-    <p>وعي صحي للمجتمع</p>
-  </div>
+<div class="icon">🌿</div>
 
-  <div class="quick-card">
-    <div class="icon">🤝</div>
-    <h3>خدمة المجتمع</h3>
-    <p>عمل إنساني وطوعي</p>
-  </div>
+<h3>إصحاح البيئة</h3>
+
+<p>بيئة نظيفة وصحية</p>
 
 </div>
+
+<div class="quick-card">
+
+<div class="icon">🏥</div>
+
+<h3>الصحة العامة</h3>
+
+<p>وعي صحي للمجتمع</p>
+
 </div>
+
+<div class="quick-card">
+
+<div class="icon">🤝</div>
+
+<h3>خدمة المجتمع</h3>
+
+<p>عمل إنساني وطوعي</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="about"
-         id="about">
+
+<section class="about" id="about">
 
 <div class="container">
 
 <div class="section-title">
+
 <h2>من نحن</h2>
-<p>منظمة إنسانية وطوعية لخدمة المجتمع</p>
+
+<p>
+منظمة إنسانية وطوعية لخدمة المجتمع
+</p>
+
 </div>
 
 <div class="about-layout">
@@ -780,7 +810,7 @@ body.english .hero .english{
 <div class="about-logo">
 
 <img src="IMG-20260919-WA0004.jpg"
-     alt="شعار المنظمة">
+alt="شعار المنظمة">
 
 </div>
 
@@ -811,61 +841,109 @@ body.english .hero .english{
 </div>
 
 </div>
+
 </div>
+
 </div>
+
 </section>
 
-<section class="services"
-         id="services">
+
+<section class="services" id="services">
 
 <div class="container">
 
 <div class="section-title">
+
 <h2>خدماتنا</h2>
-<p>مجالات العمل التي نهتم بها لخدمة المجتمع</p>
+
+<p>
+مجالات العمل التي نهتم بها لخدمة المجتمع
+</p>
+
 </div>
 
 <div class="services-grid">
 
 <div class="service">
+
 <div class="service-icon">🌿</div>
+
 <h3>إصحاح البيئة</h3>
-<p>المساهمة في تحسين نظافة البيئة والظروف البيئية.</p>
+
+<p>
+المساهمة في تحسين نظافة البيئة
+والظروف البيئية.
+</p>
+
 </div>
 
 <div class="service">
+
 <div class="service-icon">🏥</div>
+
 <h3>الصحة العامة</h3>
-<p>دعم الوعي الصحي والمبادرات الصحية.</p>
+
+<p>
+دعم الوعي الصحي والمبادرات الصحية.
+</p>
+
 </div>
 
 <div class="service">
+
 <div class="service-icon">🤝</div>
+
 <h3>العمل الطوعي</h3>
-<p>تشجيع المشاركة والعمل التطوعي.</p>
+
+<p>
+تشجيع المشاركة والعمل التطوعي.
+</p>
+
 </div>
 
 <div class="service">
+
 <div class="service-icon">💧</div>
+
 <h3>التوعية البيئية</h3>
-<p>نشر الوعي بأهمية البيئة النظيفة.</p>
+
+<p>
+نشر الوعي بأهمية البيئة النظيفة.
+</p>
+
 </div>
 
 <div class="service">
+
 <div class="service-icon">👨‍👩‍👧‍👦</div>
+
 <h3>خدمة المجتمع</h3>
-<p>دعم المبادرات المجتمعية.</p>
+
+<p>
+دعم المبادرات المجتمعية.
+</p>
+
 </div>
 
 <div class="service">
+
 <div class="service-icon">❤️</div>
+
 <h3>المبادرات الإنسانية</h3>
-<p>المشاركة في الأعمال الإنسانية والطوعية.</p>
+
+<p>
+المشاركة في الأعمال الإنسانية والطوعية.
+</p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
+
 
 <section class="big-mission">
 
@@ -882,10 +960,11 @@ body.english .hero .english{
 </p>
 
 </div>
+
 </section>
 
-<section class="register"
-         id="register">
+
+<section class="register" id="register">
 
 <div class="container">
 
@@ -905,12 +984,16 @@ body.english .hero .english{
 
 <div class="form">
 
-<!-- تم تعديل النموذج هنا -->
+<!-- نافذة مخفية لاستقبال رد FormSubmit -->
+<iframe name="formFrame"
+id="formFrame"
+title="FormSubmit"></iframe>
 
 <form
 id="registrationForm"
 action="https://formsubmit.co/Hima199th@gmail.com"
-method="POST">
+method="POST"
+target="formFrame">
 
 <input
 type="hidden"
@@ -933,11 +1016,6 @@ name="_captcha"
 value="true">
 
 <input
-type="hidden"
-name="_next"
-value="https://almusacharity.github.io/health-sudan-environment/">
-
-<input
 type="text"
 name="_honey"
 style="display:none">
@@ -951,7 +1029,6 @@ style="display:none">
 <input
 type="text"
 name="name"
-id="name"
 placeholder="اكتب اسمك الكامل"
 required>
 
@@ -966,7 +1043,6 @@ required>
 <input
 type="tel"
 name="phone"
-id="phone"
 placeholder="اكتب رقم الهاتف"
 required>
 
@@ -981,7 +1057,6 @@ required>
 <input
 type="email"
 name="email"
-id="email"
 placeholder="example@gmail.com"
 required>
 
@@ -996,7 +1071,6 @@ required>
 <input
 type="text"
 name="city"
-id="city"
 placeholder="مثال: ربك">
 
 </div>
@@ -1007,9 +1081,7 @@ placeholder="مثال: ربك">
 نوع المشاركة
 </label>
 
-<select
-name="type"
-id="type">
+<select name="type">
 
 <option value="متطوع">
 متطوع
@@ -1039,7 +1111,6 @@ id="type">
 
 <textarea
 name="message"
-id="userMessage"
 placeholder="اكتب رسالتك هنا..."></textarea>
 
 </div>
@@ -1053,6 +1124,8 @@ id="submitButton">
 
 </button>
 
+<div id="message"></div>
+
 </form>
 
 </div>
@@ -1061,8 +1134,8 @@ id="submitButton">
 
 </section>
 
-<section class="contact"
-         id="contact">
+
+<section class="contact" id="contact">
 
 <div class="container">
 
@@ -1082,85 +1155,57 @@ id="submitButton">
 
 <div class="contact-item">
 
-<div class="icon">
-📱
-</div>
+<div class="icon">📱</div>
 
-<h3>
-0919627356
-</h3>
+<h3>0919627356</h3>
 
-<p>
-WhatsApp
-</p>
+<p>WhatsApp</p>
 
 <a class="whatsapp"
 href="https://wa.me/249919627356"
 target="_blank">
-
 فتح WhatsApp
-
 </a>
 
 </div>
 
 <div class="contact-item">
 
-<div class="icon">
-📱
-</div>
+<div class="icon">📱</div>
 
-<h3>
-0912776467
-</h3>
+<h3>0912776467</h3>
 
-<p>
-WhatsApp
-</p>
+<p>WhatsApp</p>
 
 <a class="whatsapp"
 href="https://wa.me/249912776467"
 target="_blank">
-
 فتح WhatsApp
-
 </a>
 
 </div>
 
 <div class="contact-item">
 
-<div class="icon">
-📱
-</div>
+<div class="icon">📱</div>
 
-<h3>
-0124151709
-</h3>
+<h3>0124151709</h3>
 
-<p>
-WhatsApp
-</p>
+<p>WhatsApp</p>
 
 <a class="whatsapp"
 href="https://wa.me/249124151709"
 target="_blank">
-
 فتح WhatsApp
-
 </a>
 
 </div>
 
 <div class="contact-item">
 
-<div class="icon">
-📍
-</div>
+<div class="icon">📍</div>
 
-<h3>
-العنوان
-</h3>
+<h3>العنوان</h3>
 
 <p>
 ربك، مربع 16<br>
@@ -1171,13 +1216,9 @@ target="_blank">
 
 <div class="contact-item">
 
-<div class="icon">
-🕐
-</div>
+<div class="icon">🕐</div>
 
-<h3>
-ساعات العمل
-</h3>
+<h3>ساعات العمل</h3>
 
 <p>
 8:00 صباحاً<br>
@@ -1188,13 +1229,9 @@ target="_blank">
 
 <div class="contact-item">
 
-<div class="icon">
-🇸🇩
-</div>
+<div class="icon">🇸🇩</div>
 
-<h3>
-السودان
-</h3>
+<h3>السودان</h3>
 
 <p>
 العمل الإنساني والطوعي
@@ -1203,8 +1240,11 @@ target="_blank">
 </div>
 
 </div>
+
 </div>
+
 </section>
+
 
 <footer>
 
@@ -1248,14 +1288,14 @@ Sudanese Organization for Environmental Health Protection
 
 </footer>
 
+
 <button
 class="top"
 id="topButton"
 onclick="window.scrollTo({top:0})">
-
 ↑
-
 </button>
+
 
 <script>
 
@@ -1275,7 +1315,46 @@ document
 
 }
 
-/* زر الرجوع للأعلى */
+
+/* ================= إرسال النموذج ================= */
+
+document
+.getElementById("registrationForm")
+.addEventListener("submit",function(){
+
+const button =
+document.getElementById("submitButton");
+
+const message =
+document.getElementById("message");
+
+button.disabled=true;
+
+button.innerText="جاري إرسال الطلب...";
+
+message.innerText="";
+
+setTimeout(function(){
+
+message.innerText=
+"✅ تم إرسال طلب التسجيل بنجاح. شكراً لك.";
+
+message.style.color="#08783d";
+
+button.disabled=false;
+
+button.innerText="إرسال طلب التسجيل";
+
+document
+.getElementById("registrationForm")
+.reset();
+
+},3000);
+
+});
+
+
+/* ================= زر الأعلى ================= */
 
 window.addEventListener("scroll",function(){
 
@@ -1294,7 +1373,8 @@ button.style.display="none";
 
 });
 
-/* العربية */
+
+/* ================= العربية ================= */
 
 function arabic(){
 
@@ -1304,18 +1384,19 @@ document.documentElement.lang="ar";
 
 document.documentElement.dir="rtl";
 
-document.getElementById("heroTitle").innerText =
+document.getElementById("heroTitle").innerText=
 "معاً من أجل صحة وبيئة أفضل";
 
-document.getElementById("heroText").innerText =
+document.getElementById("heroText").innerText=
 "منظمة إنسانية وطوعية تعمل من أجل إصحاح البيئة والصحة العامة وخدمة المجتمع.";
 
-document.getElementById("joinButton").innerText =
+document.getElementById("joinButton").innerText=
 "🤝 سجل معنا";
 
 }
 
-/* English */
+
+/* ================= English ================= */
 
 function english(){
 
@@ -1325,13 +1406,13 @@ document.documentElement.lang="en";
 
 document.documentElement.dir="ltr";
 
-document.getElementById("heroTitle").innerText =
+document.getElementById("heroTitle").innerText=
 "Together for Better Health and a Better Environment";
 
-document.getElementById("heroText").innerText =
+document.getElementById("heroText").innerText=
 "A humanitarian and voluntary organization working to improve environmental sanitation, public health and serve the community.";
 
-document.getElementById("joinButton").innerText =
+document.getElementById("joinButton").innerText=
 "🤝 Join Us";
 
 }
@@ -1339,4 +1420,4 @@ document.getElementById("joinButton").innerText =
 </script>
 
 </body>
-  </html>
+</html>
